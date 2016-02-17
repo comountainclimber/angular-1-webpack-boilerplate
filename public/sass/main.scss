@@ -1,0 +1,201 @@
+@import 'navigation';
+@import 'md-settings';
+@import 'video';
+@import 'animation';
+
+$darkblue: #263248;
+$primary: #24aae1;
+$greyblue: #7e8aa2;
+$gold: #ff9800;
+$black: #000;
+$grey: #9b9b9b;
+$darkgrey: #454545;
+$lightgrey: #B4B4B4;
+$white: #fff;
+$primary-button-on-hover: #198ab9;
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.page-container {
+  padding-top: 92px;
+  background-color: $white;
+  // padding-bottom: 2%;
+
+      @media (max-width: 767px) {
+      margin-top: 0px;
+  }
+}
+
+.page-container-nocolor {
+  margin-top: 92px;
+  // padding-bottom: 2%;
+
+      @media (max-width: 767px) {
+      margin-top: 0px;
+  }
+}
+
+// body {
+//   background: $darkgrey;
+// }
+
+// .list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+.simplified-travel-list ul{
+  margin-bottom: 0px;
+  -webkit-padding-start: 20%;
+
+        @media (max-width: 960px) {
+      -webkit-padding-start: 40%;
+  }
+
+          @media (max-width: 668px) {
+  -webkit-padding-start: 33%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+  margin-top: 0px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+  color: $black;
+  line-height: 30px;
+  letter-spacing: .2px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+ font-weight: 200;
+    text-transform: uppercase;}
+
+strong {
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 24px;
+  color: $black;
+  font-weight: 100;
+  margin-top: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.h1-2 {
+  font-size: 38px;
+  color: $white;
+  letter-spacing: 2.8px;
+  line-height: 100px;
+  text-align: center;
+  background: $lightgrey;
+  // margin-top: 5px;
+  // margin-bottom: 5px;
+  font-weight: 100;
+
+  @media (max-width: 432px) {
+    line-height: 40px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+
+.grey-background {
+  background-color: #e7e7e7;
+    // background-color: #e7e7e7;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    margin-top: 6%;
+
+    @media (max-width: 1025px) {
+    margin-bottom:6%;
+  }
+}
+
+.darkgrey-background {
+  background-color: $darkblue;
+}
+
+.form-image img{
+      margin: auto;
+    opacity: .1;
+}
+
+// *-*-*-*- THEME BUTTON STYLING *-*-*-*-
+
+.button-stlye {
+  letter-spacing: 3px;
+  color: $white;
+}
+
+.desktop-nav-link {
+  letter-spacing: 2px;
+}
+
+img.md-card-image.jumbotron-image {
+  width: 100%;
+  max-width: 380px;
+}
+
+.material-icons {
+  font-size: 70px;
+}
+
+.main-info-lg img {
+  width: 95px;
+}
+
+.benefits {
+  background-color: $greyblue;
+  border-radius: 70px;
+  padding: 20px;
+  color: $white;
+  width: 50px;
+  height: 50px;
+  margin-bottom: -20px;
+}
+
+// *-*-*-*- SECTION STYLING *-*-*-*-
+.section-divider {
+  height: 150px;
+  background-color: $darkblue;
+}
+
+.member-details {
+      margin-bottom: 10%;
+
+      i {
+            background-color: $darkblue;
+    color: white;
+    border-radius: 48px;
+    padding: 10px;
+      }
+}
+
+.footer {
+  background-color: $darkgrey;
+  color: white;
+  height: 150px;
+  padding-top: 75px;
+  padding-bottom: 120px;
+  // position: absolute;
+  // bottom: 0em;
+}

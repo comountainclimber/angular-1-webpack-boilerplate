@@ -1,0 +1,93 @@
+$darkblue: #263248;
+$primary: #24aae1;
+$greyblue: #7e8aa2;
+$gold: #ff9800;
+$black: #000;
+$grey: #9b9b9b;
+$lightgrey: #B4B4B4;
+$white: #fff;
+$primary-button-on-hover: #198ab9;
+$darkgrey: #454545;
+
+
+// *-*-*-*- HEADER AND NAV STYLING *-*-*-*-
+
+.header {
+  background-color: $darkblue;
+      height: 85px;
+  text-align: center;
+  border-bottom: $primary solid thick;
+  border-bottom-width: 5px;
+
+  @media (max-width: 768px) {
+    height: 140px;
+    text-align: center;
+  }
+}
+
+.dark-blue {
+  background-color: $darkblue;
+  position:fixed;
+  width: 100%;
+  max-width: 1500px;
+  z-index: 100;
+
+    @media (max-width: 767px) {
+      display: none;
+  }
+}
+
+.nav-header {
+  text-align: center;
+  background: $lightgrey;
+  margin-bottom: 10px;
+}
+
+.nav-row {
+  position: fixed;
+}
+
+.nav-header img {
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mobile-nav {
+
+
+    @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.nav-item {
+  font-size: 28px;
+  color: $white;
+  letter-spacing: 2.8px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.logo {
+  height: 80px;
+  // margin-top: 17px;
+  vertical-align: middle;
+
+  @media (max-width: 767px) {
+    display: inhertit;
+  }
+}
+
+.mobile-logo {
+  height: 172px;
+  margin: auto;
+  margin-top: 10px;
+  width: 320px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

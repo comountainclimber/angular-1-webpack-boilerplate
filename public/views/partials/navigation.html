@@ -1,0 +1,73 @@
+<div ng-controller="NavCtrl">
+
+  <div layout class="nav-row">
+  <md-button class="md-icon-button md-primary" aria-label="Settings" ng-click="toggleLeft()">
+      <md-icon>menu</md-icon>
+  </md-button>
+  </div>
+
+  <div layout="column" flex ng-cloak>
+    <section layout="row" flex>
+      <md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-z2" flex>
+        <md-content>
+          <div class="nav-header">
+          <a href="/" ng-click="close()">
+          <img src="/images/header-logo-mobile.png">
+          </a>
+          </div>
+        </md-content>
+        <md-content>
+          <div class="text-center">
+            <md-button class="md-raised md-primary nav-button" href="/schedule" ng-click="close()">
+              SCHEDULE
+            </md-button>
+          </div>
+        </md-content>
+        <md-content>
+          <div class="text-center">
+            <md-button class="md-raised md-primary nav-button" href="/memberships" ng-click="close()">
+              MEMBERSHIPS
+            </md-button>
+          </div>
+        </md-content>
+        <md-content>
+          <div class="text-center">
+            <md-button class="md-raised md-primary nav-button" href="/about" ng-click="close()">
+              HOW IT WORKS
+            </md-button>
+          </div>
+        </md-content>
+        <md-content>
+          <div class="text-center">
+            <md-button class="md-raised md-primary nav-button" href="/contact" ng-click="close()">
+              CONTACT
+            </md-button>
+          </div>
+        </md-content>
+      </md-sidenav>
+    </section>
+  </div>
+
+    <div class="mobile-nav" layout="row">
+      <div flex="100" class="header">
+        <a href="/">
+          <img class="mobile-logo" src="../images/header-logo-mobile.png">
+        </a>
+      </div>
+    </div>
+
+<!-- <div layout="row" flex="100"> -->
+    <section class="dark-blue" layout="row" layout-xm="column" layout-align="end center" layout-wrap>
+      <div layout="row" layout-align="start center" flex>
+        <md-button href="/" class="md-primary">
+          <img class="logo" src="../images/freshairwhite.png">
+        </md-button>
+      <span flex></span>
+    </div>
+      <md-button href="/schedule" class="md-primary desktop-nav-link">SCHEDULE</md-button>
+      <md-button href="/contact" class="md-primary desktop-nav-link">CONTACT</md-button>
+      <md-button href="/memberships" class="md-primary desktop-nav-link">MEMBERSHIPS</md-button>
+      <md-button href="/faq" class="md-primary desktop-nav-link">FAQ</md-button>
+    </section>
+<!-- </div> -->
+</div>
