@@ -23,13 +23,24 @@ $primary-button-on-hover: #198ab9;
   margin: auto;
 }
 
+.jumbo {
+    height: 100vh;
+    background: url(../images/header-image-1.png) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-position: right;
+    margin-bottom: 6%;
+
+}
+
 .page-container {
-  padding-top: 92px;
+  // padding-top: 6%;
   background-color: $white;
+  padding-bottom: 6%;
   // padding-bottom: 2%;
 
-      @media (max-width: 767px) {
-      margin-top: 0px;
+      @media (min-width: 767px) {
+      padding-top: 92px;
   }
 }
 
@@ -127,10 +138,10 @@ h2 {
     // background-color: #e7e7e7;
     padding-top: 5%;
     padding-bottom: 0%;
-    margin-top: 6%;
+    // margin-top: 6%;
 
     @media (max-width: 1025px) {
-    margin-bottom:6%;
+    // margin-bottom:6%;
   }
 }
 

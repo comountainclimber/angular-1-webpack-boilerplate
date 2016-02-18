@@ -295,12 +295,20 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   max-width: 1500px;
   margin: auto; }
 
+.jumbo {
+  height: 100vh;
+  background: url(../images/header-image-1.png) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  background-position: right;
+  margin-bottom: 6%; }
+
 .page-container {
-  padding-top: 92px;
-  background-color: #fff; }
-  @media (max-width: 767px) {
+  background-color: #fff;
+  padding-bottom: 6%; }
+  @media (min-width: 767px) {
     .page-container {
-      margin-top: 0px; } }
+      padding-top: 92px; } }
 
 .page-container-nocolor {
   margin-top: 92px; }
@@ -372,11 +380,7 @@ h2 {
 .grey-background {
   background-color: #e7e7e7;
   padding-top: 5%;
-  padding-bottom: 0%;
-  margin-top: 6%; }
-  @media (max-width: 1025px) {
-    .grey-background {
-      margin-bottom: 6%; } }
+  padding-bottom: 0%; }
 
 .darkgrey-background {
   background-color: #263248; }

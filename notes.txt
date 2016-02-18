@@ -1,63 +1,51 @@
+<!-- <div flex layout="row" class="text-center">
+    <md-card class="header-card" flex>
 
-  // app.get('/retrieveVisited', function(req, res){
-//   db.Country.find({hasTravelled: "true"}, function(err,doc){
-//     console.log(doc)
-//     res.send(doc)
-//   })  
-// })
+    <div flex-gt-sm="60">
+          <md-card-content>
 
 
+            <h1> 
+              Why sit in traffic when you can <strong> fly to the mountains </strong> in 40 minutes?
+            </h1>
+            <h2>
+              For one low monthly membership fee have unlimited access to weekly flights to Telluride, Aspen and Vail*
+            </h2>
+            <a href="/schedule">
+            <md-button class="md-raised md-primary btn1">VIEW FLIGHT SCHEDULE</md-button>
+            </a>
+            <p>
+              *Plans to expand our offerings to Steamboat and Crested Butte are currently under negotiation.
+            </p>
 
-// app.post('/search', function(req, res){
-//     db.Country.find({name:req.body.country})
-//     db.Country.find({name:new RegExp(req.body.country)} , function(err, doc){
-//       res.send(doc)
-//     })
-// })
-
-// app.post('/hasbeen', function(req, res){
-  
-
-//   db.Country.findOne({name:req.body.name} , function(err, doc){
-//       doc.hasTravelled = req.body.hasTravelled
-//       doc.save()
-//       console.log(doc)
-//     })    
-// })
-
-
-  
-//   var postData = querystring.stringify({
-//     'vendorGUID': req.body.vendorGUID,
-//     'password': req.body.password,
-//     'user': req.body.user
-//   });
+          </md-card-content>
+              </div>
+    </md-card>
 
 
-//   var options = {
-//     hostname: 'qa.flightmanager.com',
-//     path: 'qa.flightmanager.com/webservice/alliancenetwork/fmvendorws.asmx%20HTTP/1.1',
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'text/xml',
-//       'Content-Length': postData.length
-//     }
-//   };
+</div> -->
 
-//   var request = http.request(options, function(response){
-//   console.log("Status: " + response.statusCode);
-//   console.log("Headers: " + JSON.stringify(response.headers));
-//   response.setEncoding('utf8');
-//   response.on('data', function(chunk){
-//     console.log('Body: ' + chunk);
-//   });
-// });
+<!-- <div layout="row">
+  <div flex="100"> 
+    <div class="h1-2">
+      PRIVATE JETS
+    </div>
+  </div>
+</div>
 
-// request.on('error', function(e){
-//   console.log("Problem with request " + e.message);
-// });
 
-// // post the data
+<div layout="row" class="news-video">
+<video width="75%" height="50%" style="margin: auto;" controls poster="../images/video-still.png">
+  <source src="../images/skip-the-traffic.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
 
-// request.write(postData);
-// request.end();
+<div layout="row">
+  <div flex="100"> 
+    <div class="h1-2">
+      MEMBER BENEFITS 
+    </div>
+  </div>
+</div>
+ -->
