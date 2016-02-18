@@ -82,10 +82,10 @@ $darkgrey: #454545;
 }
 
 .mobile-logo {
-  height: 172px;
+  // height: 172px;
   margin: auto;
   margin-top: 10px;
-  width: 320px;
+    width: 115px;
 
   @media (min-width: 768px) {
     display: none;
