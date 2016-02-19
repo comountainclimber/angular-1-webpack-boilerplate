@@ -3,10 +3,12 @@
     FREQUENTLY ASKED QUESTIONS
   </div>
 
-<div layout-gt-xs="row" layout-xs="column" flex flex-xs="80" style="
+<div layout-gt-xs="row" layout-xs="column" flex="100" style="
     padding-top: 2%;
 ">
-  <div layout="column" class="text-center question-categories" flex-offset="5" flex="30">
+
+
+  <div layout="column" class="text-center question-categories" flex-offset-gt-xs="5" flex-gt-xs="30">
     <div class="headline" ng-class="{ 'headline-selected': showWhatIsFreshAir }" ng-click="revealWhatIsFreshAir()">
       What is FreshAir?
     </div>
@@ -24,10 +26,10 @@
     </div>
   </div>
 
-  <div layout="column" flex="10">
+  <div layout="column" flex-gt-xs="10">
   </div>
 
-  <div layout="column" class="faq" flex="60">
+  <div layout="column" class="faq" flex-gt-xs="60">
     <div ng-include src="'views/partials/faq/memberships.html'">
     </div>
 
@@ -41,7 +43,7 @@
     </div>
   </div>
 
-  <div layout="column" flex="5">
+  <div layout="column" flex-gt-xs="5">
   </div>
 </div>
 
