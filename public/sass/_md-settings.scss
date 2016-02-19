@@ -182,13 +182,17 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   @extend .button-stlye;
   color: $white;
   height: 60px;
-  font-size: 17px;
+  // font-size: 17px;
+      -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
   margin: auto;
 }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
+        -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
 @extend .md-button.md-freshair-theme.md-primary.btn1;
-    width: 100%;
+    width: 75%;
 
 }
 

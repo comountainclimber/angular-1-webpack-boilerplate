@@ -1,19 +1,42 @@
 <div class="page-container">
 
- <div layout="row">
- <div class="jumbo">
- </div>
- </div>
- 
+  <div layout="row" ng-cloak>
+    <div class="jumbo">
+      <div layout="column" class="text-center margin-auto" layout-fill layout-align="center" flex-gt-md="50" flex-md="75" flex-sm="90" flex-xs="95" style="
+    padding-bottom: 15%;
+">
+    <!--     <div class="member-details">
+          <i class="material-icons">flight_takeoff</i>
+        </div> -->
+        <img src="../images/logo-black-2.png" style="
+    height: 100px;
+    width: 100px;
+    /* margin: auto; */
+    /* margin-bottom: 0; */
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+">
+        <h1> WHY SIT IN TRAFFIC?</h1>
+        <h2> When you can fly to the mountains in <strong> 40 minutes. </strong> </h2>
+        <h3> For one low monthly membership fee have unlimited access to weekly flights to Telluride Aspen and Vail </h3>
+         <a href="/schedule">
+            <md-button class="md-raised md-primary btn-100">VIEW FLIGHT SCHEDULE</md-button>
+            </a>
+      </div>
+    </div>
+  </div>
+
+
+<div ng-include src="'views/partials/member-benefits.html'">
+</div>
+
 
  <div layout="row" class="news-video">
 <video width="75%" height="50%" style="margin: auto;" controls poster="../images/video-still.png">
   <source src="../images/skip-the-traffic.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-</div>
-
-<div ng-include src="'views/partials/member-benefits.html'">
 </div>
 
 

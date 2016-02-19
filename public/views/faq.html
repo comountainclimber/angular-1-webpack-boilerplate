@@ -1,8 +1,62 @@
-<div class="page-container">
-<div class="text-center h1-2">
-  FREQUENTLY ASKED QUESTIONS
+<div class="page-container faq-page">
+  <div class="text-center h1-2">
+    FREQUENTLY ASKED QUESTIONS
+  </div>
+
+<div layout-gt-xs="row" layout-xs="column" flex flex-xs="80" style="
+    padding-top: 2%;
+">
+  <div layout="column" class="text-center question-categories" flex-offset="5" flex="30">
+    <div class="headline" ng-class="{ 'headline-selected': showWhatIsFreshAir }" ng-click="revealWhatIsFreshAir()">
+      What is FreshAir?
+    </div>
+    <div class="headline" ng-class="{ 'headline-selected': showMemberships }" ng-click="revealMemberships()">
+      Memberships
+    </div>
+    <div class="headline" ng-class="{ 'headline-selected': showScheduleAndReservations }" ng-click="revealScheduleAndReservations()">
+      Schedule and Reservations
+    </div>
+    <div class="headline" ng-class="{ 'headline-selected': showOperations }" ng-click="revealOperations()">
+      Operations and Inflight Experience
+    </div>
+    <div class="headline">
+      Dont see your question?
+    </div>
+  </div>
+
+  <div layout="column" flex="10">
+  </div>
+
+  <div layout="column" class="faq" flex="60">
+    <div ng-include src="'views/partials/faq/memberships.html'">
+    </div>
+
+    <div ng-include src="'views/partials/faq/operations.html'">
+    </div>
+
+    <div ng-include src="'views/partials/faq/schedule-reservations.html'">
+    </div>
+
+    <div ng-include src="'views/partials/faq/what-is-freshair.html'">
+    </div>
+  </div>
+
+  <div layout="column" flex="5">
+  </div>
 </div>
+
+
+
+
+
+
+
 </div>
+<!-- 
+What is FreshAir?
+Memberships
+Schedule and Reservations
+Operations and Inflight Experience -->
 
   <div ng-include src="'views/partials/footer.html'">
   </div>

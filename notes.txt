@@ -49,3 +49,29 @@ Your browser does not support the video tag.
   </div>
 </div>
  -->
+
+
+
+     <div class="question">
+    <p> What does it cost to be a member? </p>
+    </div>
+    <div class="answer">
+      <p>
+        <p> Personal Membership </p>
+        <ul>
+          <li>Membership for one (1) individual </li>
+          <li>One time initiation fee: $1,500</li>
+          <li>Recurring monthly fee: $1,000/month</li>
+          <li>Can add up to two (2) additional members at +$750/month per person</li>
+        </ul>
+      </p>
+
+      <p>
+        <p> Family Membership </p>
+        <ul>
+          <li>Membership for four (4) individuals </li>
+          <li>One time initiation fee: $5,000</li>
+          <li>Recurring monthly fee: $3,000/month</li>
+          <li>Can add up to two (2) additional members at +$500/month per person</li>
+        </ul>
+      </p>

@@ -36,7 +36,7 @@ angular.module('freshAir')
     $routeProvider
       .when('/faq', {
         templateUrl : '/views/faq.html',
-        controller : 'mainCtrl'
+        controller : 'faqCtrl'
       });
 
     $locationProvider.html5Mode(true);
