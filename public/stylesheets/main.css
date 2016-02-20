@@ -189,7 +189,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   border: black solid thin;
   color: black;
   box-shadow: none; }
-  @media (max-width: 300px) {
+  @media (max-width: 500px) {
     .md-button.md-freshair-theme.md-primary.btn-100 {
       width: 90%; } }
 
