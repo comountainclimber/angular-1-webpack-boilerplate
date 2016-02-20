@@ -4,18 +4,17 @@
   text-align: center;
   border-bottom: #24aae1 solid thick;
   border-bottom-width: 5px; }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .header {
       height: 140px;
       text-align: center; } }
 
 .dark-blue {
   background-color: #263248;
-  position: fixed;
   width: 100%;
   max-width: 1500px;
   z-index: 100; }
-  @media (max-width: 767px) {
+  @media (max-width: 900px) {
     .dark-blue {
       display: none; } }
 
@@ -32,7 +31,7 @@
   padding-top: 20px;
   padding-bottom: 20px; }
 
-@media (min-width: 767px) {
+@media (min-width: 901px) {
   .mobile-nav {
     display: none; } }
 
@@ -48,7 +47,7 @@
 .logo {
   height: 80px;
   vertical-align: middle; }
-  @media (max-width: 767px) {
+  @media (max-width: 900px) {
     .logo {
       display: inhertit; } }
 
@@ -56,11 +55,11 @@
   margin: auto;
   margin-top: 10px;
   width: 115px; }
-  @media (min-width: 768px) {
+  @media (min-width: 901px) {
     .mobile-logo {
       display: none; } }
 
-.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn-100 {
+.button-stlye, .md-button.md-freshair-theme.md-primary.btn1 {
   letter-spacing: 3px;
   color: #fff; }
 
@@ -68,7 +67,7 @@
   height: inherit; }
 
 .md-sidenav-left.md-sidenav-left {
-  background-color: #454545; }
+  background-color: #B4B4B4; }
 
 md-card.white-card.md-freshair-theme {
   background-color: #fff;
@@ -131,7 +130,6 @@ md-card.wasting-time-card.md-freshair-theme {
   background-color: #7e8aa2; }
 
 .md-button.md-icon-button.md-freshair-theme {
-  margin: 0 0.6rem;
   height: 4.8rem;
   min-width: 0;
   line-height: -0.8rem;
@@ -141,7 +139,7 @@ md-card.wasting-time-card.md-freshair-theme {
   background-color: rgba(125, 125, 125, 0.2);
   top: 1em;
   right: -0.8em; }
-  @media (min-width: 768px) {
+  @media (min-width: 901px) {
     .md-button.md-icon-button.md-freshair-theme {
       display: none; } }
 
@@ -173,17 +171,31 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
 .md-button.md-freshair-theme.btn1 {
   color: #fff; }
 
-.md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn-100 {
+.md-button.md-freshair-theme.md-primary.btn1 {
   color: #fff;
   height: 60px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  margin: auto; }
+  margin: auto;
+  width: 80%; }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  width: 75%; }
+  letter-spacing: 3px;
+  height: 60px;
+  width: 75%;
+  background-color: rgba(36, 170, 225, 0);
+  border: black solid thin;
+  color: black;
+  box-shadow: none; }
+  @media (min-width: 300px) {
+    .md-button.md-freshair-theme.md-primary.btn-100 {
+      width: 90%; } }
+
+.md-button.md-freshair-theme.md-primary.btn-100:hover {
+  color: #fff;
+  border: none; }
 
 .inputdemoErrorsAdvanced {
   /* NOTE: Check the demo's HTML to see some additional RTL support CSS */
@@ -213,9 +225,11 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   bottom: 7px;
   opacity: 1; }
 
-@media (max-width: 1025px) {
-  .news-video {
-    padding-top: 0px; } }
+.news-video {
+  margin-bottom: 40px; }
+  @media (max-width: 1025px) {
+    .news-video {
+      padding-top: 0px; } }
 
 .news-video video {
   background: transparent url("../images/video-still.png") no-repeat 0 0;
@@ -397,29 +411,19 @@ a {
   background-size: cover;
   width: 100vw;
   background-position: right;
-  margin-bottom: 6%; }
+  overflow: hidden; }
+  @media (min-width: 1250px) {
+    .jumbo .content-column {
+      padding-bottom: 250px; } }
   .jumbo h1 {
     font-weight: 400; }
-  @media (min-width: 1280px) {
-    .jumbo .margin-auto {
-      margin: 0px;
-      margin-left: 3%; } }
-  @media (min-width: 1025px) {
-    .jumbo {
-      margin-bottom: 0px; } }
 
 .page-container {
-  background-color: #fff;
-  padding-bottom: 6%; }
-  @media (min-width: 767px) {
-    .page-container {
-      padding-top: 92px; } }
+  background-color: #fff; }
 
-.page-container-nocolor {
-  margin-top: 92px; }
-  @media (max-width: 767px) {
-    .page-container-nocolor {
-      margin-top: 0px; } }
+@media (max-width: 767px) {
+  .page-container-nocolor {
+    margin-top: 0px; } }
 
 .simplified-travel-list ul {
   margin-bottom: 0px;
@@ -465,10 +469,7 @@ a {
   margin-top: 1em; }
 
 .grey-background {
-  background-color: #e7e7e7;
-  padding-top: 5%;
   padding-bottom: 0%;
-  margin-top: 6%;
   margin-bottom: 6%; }
 
 .darkgrey-background {
@@ -478,7 +479,7 @@ a {
   margin: auto;
   opacity: .1; }
 
-.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn-100 {
+.button-stlye, .md-button.md-freshair-theme.md-primary.btn1 {
   letter-spacing: 3px;
   color: #fff; }
 
@@ -509,7 +510,8 @@ img.md-card-image.jumbotron-image {
   background-color: #263248; }
 
 .member-details {
-  margin-bottom: 10%; }
+  margin-bottom: 2%;
+  padding: 10px; }
   .member-details i {
     background-color: #263248;
     color: white;
@@ -527,6 +529,11 @@ img.md-card-image.jumbotron-image {
   padding-top: 75px;
   padding-bottom: 120px; }
 
+.faq-page h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+  margin-bottom: 0px; }
+
 .question-categories .headline {
   cursor: pointer; }
 
@@ -537,7 +544,10 @@ img.md-card-image.jumbotron-image {
   font-weight: 400; }
 
 .headline-selected {
-  font-weight: 400; }
+  font-weight: bold; }
+
+.headline-selected:hover {
+  font-weight: bold; }
 
 .question p {
   font-weight: bold; }

@@ -1,35 +1,32 @@
-<div class="page-container">
+<div class="page-container" style="
+    padding-bottom: 6%;
+">
 
   <div layout="row" ng-cloak>
     <div class="jumbo">
-      <div layout="column" class="text-center margin-auto" layout-fill layout-align="center" flex-gt-md="50" flex-md="75" flex-sm="90" flex-xs="95">
-    <!--     <div class="member-details">
-          <i class="material-icons">flight_takeoff</i>
-        </div> -->
-        <img src="../images/logo-black-2.png" style="
-    height: 100px;
-    width: 100px;
-    /* margin: auto; */
-    /* margin-bottom: 0; */
-    margin: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
-">
-        <h1> WHY SIT IN TRAFFIC?</h1>
-        <h2> When you can fly to the mountains in <strong> 40 minutes. </strong> </h2>
-        <h3> For one low monthly membership fee have unlimited access to weekly flights to Telluride Aspen and Vail </h3>
-         <a href="/schedule">
-            <md-button class="md-raised md-primary btn-100">VIEW FLIGHT SCHEDULE</md-button>
+      <div layout="column" class="text-center margin-auto content-column" layout-fill layout-align="center" flex-gt-sm="80" flex-xs="95">
+<!--         <img src="../images/freshairblack.png"> -->
+        <h1 style="margin-bottom:0px;"> WHY SIT IN TRAFFIC?</h1>
+        <h2 style="margin-bottom:0px;"> When you can fly to the mountains in <strong style="
+    font-weight: 400;
+"> 40 minutes. </strong> </h2>
+        <h3 style="
+    font-weight: 300;"> All-you-can-fly membership to Telluride, Aspen and Eagle-Vail for one low monthly fee. </h3>
+         <a href="#howitworks">
+            <md-button class="md-raised md-primary btn-100">HOW IT WORKS</md-button>
             </a>
       </div>
     </div>
   </div>
 
-<!-- <img src="../images/freshairblack.png"> -->
 
-<div ng-include src="'views/partials/member-benefits.html'">
+<div id="howitworks" flex="100" class="text-center">
+  <h1  style="
+/*    font-weight: 400;*/
+    margin-bottom: 20px;
+"> HOW IT WORKS </h1>
+<h3> Save time with the best travel solution to the mountains.</h3>
 </div>
-
 
 
  <div layout="row" class="news-video">
@@ -41,28 +38,22 @@ Your browser does not support the video tag.
 
 
 
-
-<!-- <div layout="row">
-  <div flex="100"> 
-    <div class="h1-2">
-      STOP WASTING TIME
-    </div>
-  </div>
+<div flex="100" class="text-center">
+  <h1> Get there faster with <img src="images/freshair-logo-text.png" style="
+    width: 300px;
+    margin-left: 5px;
+        margin-right: 2px;
+">.</h1>
 </div>
 
-<div ng-include src="'views/partials/wasting-time.html'">
-</div> -->
-<!-- 
-<div layout="row">
-  <div flex="100"> 
-    <div class="h1-2">
-      MEMBER BENEFITS 
-    </div>
+  <div ng-include src="'views/partials/member-benefits.html'">
   </div>
-</div>
 
-<div ng-include src="'views/partials/member-benefits.html'">
-</div> -->
+
+
+
+
+
 </div>
 
   <div ng-include src="'views/partials/footer.html'">

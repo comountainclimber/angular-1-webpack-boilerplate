@@ -19,7 +19,7 @@ $darkgrey: #454545;
   border-bottom: $primary solid thick;
   border-bottom-width: 5px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     height: 140px;
     text-align: center;
   }
@@ -27,12 +27,12 @@ $darkgrey: #454545;
 
 .dark-blue {
   background-color: $darkblue;
-  position:fixed;
+  // position:fixed;
   width: 100%;
   max-width: 1500px;
   z-index: 100;
 
-    @media (max-width: 767px) {
+    @media (max-width: 900px) {
       display: none;
   }
 }
@@ -56,7 +56,7 @@ $darkgrey: #454545;
 .mobile-nav {
 
 
-    @media (min-width: 767px) {
+    @media (min-width: 901px) {
     display: none;
   }
 }
@@ -76,7 +76,7 @@ $darkgrey: #454545;
   // margin-top: 17px;
   vertical-align: middle;
 
-  @media (max-width: 767px) {
+  @media (max-width: 900px) {
     display: inhertit;
   }
 }
@@ -87,7 +87,7 @@ $darkgrey: #454545;
   margin-top: 10px;
     width: 115px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 901px) {
     display: none;
   }
 }

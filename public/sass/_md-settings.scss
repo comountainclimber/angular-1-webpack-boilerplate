@@ -19,7 +19,7 @@ $primary-button-on-hover: #198ab9;
 }
 
 .md-sidenav-left.md-sidenav-left {
-  background-color: $darkgrey;
+  background-color: $lightgrey;
 }
 
 md-card.white-card.md-freshair-theme {
@@ -124,7 +124,7 @@ md-card.wasting-time-card.md-freshair-theme {
 }
 
 .md-button.md-icon-button.md-freshair-theme {
-  margin: 0 0.6rem;
+  // margin: 0 0.6rem;
   height: 4.8rem;
   min-width: 0;
   line-height: -0.8rem;
@@ -136,7 +136,7 @@ md-card.wasting-time-card.md-freshair-theme {
   top: 1em;
      right: -0.8em;
 
-         @media (min-width: 768px) {
+         @media (min-width: 901px) {
       display: none;
   }
 }
@@ -186,15 +186,32 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
       -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
   margin: auto;
+  width:80%;
 }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
+  // @extend .button-stlye;
         -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
-@extend .md-button.md-freshair-theme.md-primary.btn1;
+    letter-spacing: 3px;
+    height: 60px;
+// @extend .md-button.md-freshair-theme.md-primary.btn1;
     width: 75%;
+    background-color:rgba(36, 170, 225, 0);
+    border: black solid thin;
+    color:black;
+    box-shadow: none;
 
+             @media (min-width: 300px) {
+      width: 90%
+  }
 }
+
+.md-button.md-freshair-theme.md-primary.btn-100:hover {
+  color: $white;
+  border: none;
+}
+
 
 
 

@@ -1,9 +1,9 @@
 <div class="page-container faq-page">
-  <div class="text-center h1-2">
+  <h1 class="text-center">
     FREQUENTLY ASKED QUESTIONS
-  </div>
+  </h1>
 
-<div layout-gt-xs="row" layout-xs="column" flex="100" style="
+<div layout-gt-xs="row" layout-xs="column" flex-gt-xs="100" flex-xs="100" style="
     padding-top: 2%;
 ">
 
@@ -19,17 +19,17 @@
       Schedule and Reservations
     </div>
     <div class="headline" ng-class="{ 'headline-selected': showOperations }" ng-click="revealOperations()">
-      Operations and Inflight Experience
+      Operations, Safety and Inflight Experience
     </div>
     <div class="headline">
-      Dont see your question?
+      <a href="/contact" style="text-decoration: none"> Dont see your question? </a>
     </div>
   </div>
 
   <div layout="column" flex-gt-xs="10">
   </div>
 
-  <div layout="column" class="faq" flex-gt-xs="60">
+  <div layout="column" class="faq" flex-gt-xs="60" flex-offset-xs="5">
     <div ng-include src="'views/partials/faq/memberships.html'">
     </div>
 
