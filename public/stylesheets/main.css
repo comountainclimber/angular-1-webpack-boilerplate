@@ -85,6 +85,9 @@
 .md-sidenav-left.md-sidenav-left {
   background-color: #263248; }
 
+.md-content.md-freshair-theme {
+  background-color: #fff; }
+
 .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button {
   color: #fff;
   font-size: 18px;

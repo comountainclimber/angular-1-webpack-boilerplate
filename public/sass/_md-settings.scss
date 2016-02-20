@@ -31,6 +31,10 @@ $primary-button-on-hover: #198ab9;
 //   margin-bottom: 60px;
 // }
 
+.md-content.md-freshair-theme {
+  background-color: $white;
+}
+
 .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button {
   color: $white;
   font-size: 18px;
