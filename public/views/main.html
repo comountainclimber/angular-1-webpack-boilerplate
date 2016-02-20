@@ -1,4 +1,4 @@
-<div class="page-container-padding-bottom">
+<div class="page-container">
   <div layout="row" ng-cloak>
     <div class="jumbo">
       <div layout="column" class="text-center margin-auto content-column" layout-fill layout-align="center" flex-gt-sm="80" flex-xs="95">
@@ -33,8 +33,16 @@
     <h1> Get there faster with <img src="images/freshair-logo-text.png">.</h1>
   </div>
 
-  <div ng-include src="'views/partials/member-benefits.html'">
+  <div ng-include class="margin-bottom" src="'views/partials/member-benefits.html'">
   </div>
+
+<md-card flex-gt-xs="75" flex-xs="95" class="margin-auto">
+  <div ng-include style="
+    background-color: rgba(224,224,224,1);
+    padding-bottom: 40px;
+" src="'views/partials/conversation.html'">
+  </div>
+</md-card>
 
   </div>
   <div ng-include src="'views/partials/footer.html'"> 

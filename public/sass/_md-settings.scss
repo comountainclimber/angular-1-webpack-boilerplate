@@ -19,7 +19,7 @@ $primary-button-on-hover: #198ab9;
 }
 
 .md-sidenav-left.md-sidenav-left {
-  background-color: $lightgrey;
+  background-color: $darkblue;
 }
 
 // .md-button.md-freshair-theme.md-raised:not([disabled]).btn2 {
@@ -35,7 +35,7 @@ $primary-button-on-hover: #198ab9;
   color: $white;
   font-size: 18px;
   letter-spacing: 2.8px;
-  background-color: $lightgrey;
+  background-color: $greyblue;
   font-weight: 100;
   padding: 6px;
   margin-bottom: 10px;
@@ -107,6 +107,17 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   -webkit-margin-after: 1em;
   margin: auto;
   width:80%;
+}
+
+.md-button.md-freshair-theme.md-primary.btn2{
+  @extend .button-stlye;
+  color: $white;
+  height: 50px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin: auto;
+  width:50%;
+      margin-bottom: 20px;
 }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {

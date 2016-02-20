@@ -20,7 +20,7 @@
 
 .nav-header {
   text-align: center;
-  background: #b4b4b4;
+  background: #263248;
   margin-bottom: 10px; }
 
 .nav-row {
@@ -75,7 +75,7 @@
   letter-spacing: 2px;
   color: #fff; }
 
-.button-stlye, .md-button.md-freshair-theme.md-primary.btn1 {
+.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2 {
   letter-spacing: 3px;
   color: #fff; }
 
@@ -83,13 +83,13 @@
   height: inherit; }
 
 .md-sidenav-left.md-sidenav-left {
-  background-color: #b4b4b4; }
+  background-color: #263248; }
 
 .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button {
   color: #fff;
   font-size: 18px;
   letter-spacing: 2.8px;
-  background-color: #b4b4b4;
+  background-color: #7e8aa2;
   font-weight: 100;
   padding: 6px;
   margin-bottom: 10px;
@@ -144,6 +144,15 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   -webkit-margin-after: 1em;
   margin: auto;
   width: 80%; }
+
+.md-button.md-freshair-theme.md-primary.btn2 {
+  color: #fff;
+  height: 50px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 20px; }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
   -webkit-margin-before: 1em;
@@ -354,7 +363,8 @@ strong {
     font-weight: 400; }
 
 .page-container {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 20px; }
 
 .page-container-padding-bottom {
   background-color: #fff;
@@ -423,7 +433,7 @@ strong {
   margin: auto;
   opacity: .1; }
 
-.button-stlye, .md-button.md-freshair-theme.md-primary.btn1 {
+.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2 {
   color: #fff;
   letter-spacing: 3px; }
 
