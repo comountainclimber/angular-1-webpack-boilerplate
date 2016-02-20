@@ -5,7 +5,7 @@ $gold: #ff9800;
 $black: #000;
 $grey: #9b9b9b;
 $darkgrey: #454545;
-$lightgrey: #B4B4B4;
+$lightgrey: #b4b4b4;
 $white: #fff;
 $primary-button-on-hover: #198ab9;
 
@@ -15,102 +15,25 @@ $primary-button-on-hover: #198ab9;
 }
 
 .layout {
-   height: inherit;
+  height: inherit;
 }
 
 .md-sidenav-left.md-sidenav-left {
   background-color: $lightgrey;
 }
 
-md-card.white-card.md-freshair-theme {
-  background-color: $white;
-  padding-bottom: 40px;
-}
-
-md-card.header-card.md-freshair-theme {
-  background: url(../images/header-image-1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: #e7e7e7;
-  margin: auto;
-    padding-top: 20%;
-    padding-bottom: 18%;
-  padding-left: 2%;
-  padding-right: 2%;
-
-  //   @media (MAX-width: 1280px) {
-  //   padding-top: 15%;
-  //   padding-bottom: 15%;
-  // }
-
-  // @media (min-width: 1250px) {
-  //   background-position: center;
-  // }
-
-    @media (max-width: 925px) {
-     background-size: auto;
-  }
-
-    @media (max-width: 668px) {
-      padding-top: 6%;
-    padding-bottom: 6%;
-  }
-}
-
-.header-card img {
-  width: 200px;
-}
-
-md-card.wasting-time-card.md-freshair-theme {
-  background: url(../images/traffic.jpg);
-    background-size: auto;
-    /* background-repeat: no-repeat; */
-    background-color: #e7e7e7;
-    height: 350px;
-    // background-attachment: fixed
-    background-position: 60% 80%;
-       margin: 0px;
-    background-size: cover;
-    box-shadow: none;
-
-
-
-
-  // @media (min-width: 400px) {
-  //   background: url(../images/traffic.jpg);
-    
-
-  // }
-
-  // max-width: 1250px;
-  // margin: auto;
-  // padding-top: 6%;
-  // padding-bottom: 6%;
-  // margin-top: 1%;
-  // margin-bottom: 1%;
-  // padding-left: 2%;
-  // padding-right: 2%;
-
-  // @media (min-width: 1250px) {
-  //   background-position: center;
-  // }
-}
-
-.md-button.md-freshair-theme.md-raised:not([disabled]).btn2 {
-  color: $white;
-  font-size: 28px;
-  color: $black;
-  letter-spacing: 2.8px;
-  font-weight: 100;
-  padding: 6px;
-  margin-bottom: 60px;
-}
+// .md-button.md-freshair-theme.md-raised:not([disabled]).btn2 {
+//   color: $white;
+//   font-size: 28px;
+//   letter-spacing: 2.8px;
+//   font-weight: 100;
+//   padding: 6px;
+//   margin-bottom: 60px;
+// }
 
 .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button {
   color: $white;
   font-size: 18px;
-  color: $white;
   letter-spacing: 2.8px;
   background-color: $lightgrey;
   font-weight: 100;
@@ -119,36 +42,34 @@ md-card.wasting-time-card.md-freshair-theme {
   width: 94%;
 }
 
-.md-button.md-freshair-theme.md-raised:not([disabled]).nav-button:focus {
-  background-color: $greyblue;
-}
+// .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button:focus {
+//   background-color: $greyblue;
+// }
 
 .md-button.md-icon-button.md-freshair-theme {
-  // margin: 0 0.6rem;
+  background-color: rgba(125, 125, 125, .2);
   height: 4.8rem;
+  line-height: -.8rem;
   min-width: 0;
-  line-height: -0.8rem;
   padding-left: 0;
   padding-right: 0;
-  width: 4.8rem;
-  background-color: rgba(125,125,125,0.2);
-  // position: fixed;
   top: 1em;
-     right: -0.8em;
+  right: -.8em;
+  width: 4.8rem;
 
-         @media (min-width: 901px) {
-      display: none;
+  @media (min-width: 901px) {
+    display: none;
   }
 }
 
 .md-icon-button.md-primary.md-button.md-freshair-theme.md-ink-ripple:hover {
-  background-color: rgba(125,125,125,0.2);
+  background-color: rgba(125, 125, 125, .2);
 }
 
 .md-button.md-freshair-theme.md-primary:not([disabled]) md-icon {
   font-size: 60px;
-  width: 60px;
   height: 60px;
+  width: 60px;
 }
 
 md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
@@ -182,28 +103,25 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   @extend .button-stlye;
   color: $white;
   height: 60px;
-  // font-size: 17px;
-      -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
   margin: auto;
   width:80%;
 }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
-  // @extend .button-stlye;
-        -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    letter-spacing: 3px;
-    height: 60px;
-// @extend .md-button.md-freshair-theme.md-primary.btn1;
-    width: 50%;
-    background-color:rgba(36, 170, 225, 0);
-    border: black solid thin;
-    color:black;
-    box-shadow: none;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 50%;
+  background-color: rgba(36, 170, 225, 0);
+  border: $black solid thin;
+  color: $black;
+  box-shadow: none;
 
-             @media (max-width: 500px) {
-      width: 90%
+  @media (max-width: 500px) {
+    width: 90%
   }
 }
 
@@ -211,32 +129,3 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   color: $white;
   border: none;
 }
-
-
-
-
-.inputdemoErrorsAdvanced {
-  /* NOTE: Check the demo's HTML to see some additional RTL support CSS */
-  /* Setup animations similar to the ng-messages */ }
-  .inputdemoErrorsAdvanced .hint {
-    /* Position the hint */
-    position: absolute;
-    left: 2px;
-    right: auto;
-    bottom: 7px;
-    /* Copy styles from ng-messages */
-    font-size: 12px;
-    line-height: 14px;
-    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-    /* Set our own color */
-    color: grey; }
-  .inputdemoErrorsAdvanced .hint.ng-hide,
-  .inputdemoErrorsAdvanced .hint.ng-enter,
-  .inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active {
-    bottom: 26px;
-    opacity: 0; }
-  .inputdemoErrorsAdvanced .hint.ng-leave,
-  .inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active {
-    bottom: 7px;
-    opacity: 1; }
-

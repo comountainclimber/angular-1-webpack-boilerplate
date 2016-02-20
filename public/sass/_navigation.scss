@@ -4,17 +4,14 @@ $greyblue: #7e8aa2;
 $gold: #ff9800;
 $black: #000;
 $grey: #9b9b9b;
-$lightgrey: #B4B4B4;
+$lightgrey: #b4b4b4;
 $white: #fff;
 $primary-button-on-hover: #198ab9;
 $darkgrey: #454545;
 
-
-// *-*-*-*- HEADER AND NAV STYLING *-*-*-*-
-
 .header {
   background-color: $darkblue;
-      height: 85px;
+  height: 85px;
   text-align: center;
   border-bottom: $primary solid thick;
   border-bottom-width: 5px;
@@ -27,13 +24,12 @@ $darkgrey: #454545;
 
 .dark-blue {
   background-color: $darkblue;
-  // position:fixed;
   width: 100%;
   max-width: 1500px;
   z-index: 100;
 
-    @media (max-width: 900px) {
-      display: none;
+  @media (max-width: 900px) {
+    display: none;
   }
 }
 
@@ -54,9 +50,7 @@ $darkgrey: #454545;
 }
 
 .mobile-nav {
-
-
-    @media (min-width: 901px) {
+  @media (min-width: 901px) {
     display: none;
   }
 }
@@ -71,9 +65,14 @@ $darkgrey: #454545;
   font-weight: 100;
 }
 
+.md-button.md-freshair-theme.md-primary.desktop-nav-link-white i {
+  font-size: 15px;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 .logo {
   height: 80px;
-  // margin-top: 17px;
   vertical-align: middle;
 
   @media (max-width: 900px) {
@@ -81,13 +80,26 @@ $darkgrey: #454545;
   }
 }
 
+.white-nav {
+  font-size: 12px;
+  display: inline-block;
+}
+
 .mobile-logo {
-  // height: 172px;
   margin: auto;
   margin-top: 10px;
-    width: 115px;
+  width: 115px;
 
   @media (min-width: 901px) {
     display: none;
   }
+}
+
+.desktop-nav-link {
+  letter-spacing: 2px;
+}
+
+.md-button.md-freshair-theme.md-primary.desktop-nav-link-white {
+  letter-spacing: 2px;
+  color: $white;
 }

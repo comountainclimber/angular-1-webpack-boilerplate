@@ -1,60 +1,36 @@
-<div class="page-container" style="
-    padding-bottom: 6%;
-">
-
+<div class="page-container-padding-bottom">
   <div layout="row" ng-cloak>
     <div class="jumbo">
       <div layout="column" class="text-center margin-auto content-column" layout-fill layout-align="center" flex-gt-sm="80" flex-xs="95">
-<!--         <img src="../images/freshairblack.png"> -->
-        <h1 style="margin-bottom:0px;"> WHY SIT IN TRAFFIC?</h1>
-        <h2 style="margin-bottom:0px;"> When you can fly to the mountains in <strong style="
-    font-weight: 400;
-"> 40 minutes. </strong> </h2>
+        <h1 class="no-margin-bottom"> WHY SIT IN TRAFFIC?</h1>
+        <h2 class="no-margin-bottom"> When you can fly to the mountains in <strong> 40 minutes. </strong> </h2>
         <h3 style="
-    font-weight: 300;"> All-you-can-fly membership to Telluride, Aspen and Eagle-Vail for one low monthly fee. </h3>
-         <a href="#howitworks">
-            <md-button class="md-raised md-primary btn-100">HOW IT WORKS</md-button>
-            </a>
+        font-weight: 300;"> All-you-can-fly membership to Telluride, Aspen and Eagle-Vail for one low monthly fee. </h3>
+        <a href="#howitworks">
+          <md-button class="md-raised md-primary btn-100">HOW IT WORKS</md-button>
+        </a>
       </div>
     </div>
   </div>
 
+  <div id="howitworks" flex="100" class="text-center">
+    <h1 class="margin-bottom"> HOW IT WORKS </h1>
+    <h3> Save time with the best travel solution to the mountains.</h3>
+  </div>
+  <div layout="row" class="news-video">
+    <video width="75%" height="50%" class="margin-auto" controls poster="../images/video-still.png">
+      <source src="../images/skip-the-traffic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-<div id="howitworks" flex="100" class="text-center">
-  <h1  style="
-/*    font-weight: 400;*/
-    margin-bottom: 20px;
-"> HOW IT WORKS </h1>
-<h3> Save time with the best travel solution to the mountains.</h3>
-</div>
-
-
- <div layout="row" class="news-video">
-<video width="75%" height="50%" style="margin: auto;" controls poster="../images/video-still.png">
-  <source src="../images/skip-the-traffic.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</div>
-
-
-
-<div flex="100" class="text-center">
-  <h1> Get there faster with <img src="images/freshair-logo-text.png" style="
-        width: 210px;
-    margin-left: 5px;
-        margin-right: 2px;
-">.</h1>
-</div>
+  <div flex="100" class="text-center get-there-faster">
+    <h1> Get there faster with <img src="images/freshair-logo-text.png">.</h1>
+  </div>
 
   <div ng-include src="'views/partials/member-benefits.html'">
   </div>
 
-
-
-
-
-
-</div>
-
-  <div ng-include src="'views/partials/footer.html'">
   </div>
+  <div ng-include src="'views/partials/footer.html'"> 
+</div>

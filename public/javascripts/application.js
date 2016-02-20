@@ -9,11 +9,6 @@ angular.module('freshAir')
         controller : 'mainCtrl'
       });
       
-    $routeProvider
-      .when('/components', {
-        templateUrl : '/views/components.html',
-        controller : 'ComponentsCtrl'
-      });
 
     $routeProvider
       .when('/memberships', {
@@ -27,11 +22,6 @@ angular.module('freshAir')
         controller : 'mainCtrl'
       });
 
-    $routeProvider
-      .when('/schedule', {
-        templateUrl : '/views/schedule.html',
-        controller : 'mainCtrl'
-      });
 
     $routeProvider
       .when('/faq', {

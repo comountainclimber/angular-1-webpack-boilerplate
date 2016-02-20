@@ -1,12 +1,12 @@
 {
-  "name": "freshair",
+  "name": "FreshAir",
   "version": "1.0.0",
-  "description": "",
+  "description": "FreshAir is private jet subscription service for unlimited flights to the mountains of Colorado.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Maxwell Lasky",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",

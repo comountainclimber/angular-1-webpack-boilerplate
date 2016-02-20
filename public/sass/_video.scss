@@ -11,37 +11,18 @@ $primary-button-on-hover: #198ab9;
 
 .news-video {
   // background: url("../images/chairlift-image.png") repeat;
-  margin-bottom:40px;
-        // @media (-width: 1025) {
-    // padding-top: 6%;
-    // padding-bottom: 6%;
-  // }
-      @media (max-width: 1025px) {
-    padding-top: 0px;
-    // padding-bottom: 6%;
-  }
-
-
-    @media (max-width: 500px) {
-    // padding-top: 30px;
-    // padding-bottom: 6%;
-    // background-position: 20% 95%;
-  }
+  margin-bottom: 40px;
 }
 
 
 .news-video video {
-  // background-color: $darkgrey;
-   background:transparent url('../images/video-still.png') no-repeat 0 0; 
-   -webkit-background-size:cover; 
-   -moz-background-size:cover; 
-   -o-background-size:cover; 
-   background-size:cover; 
-       // background: transparent url("../images/video-still.png") no-repeat 0 0;
+  background: transparent url('../images/video-still.png') no-repeat 0 0;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 
   @media (max-width: 1024px) {
-    width: 100%
+    width: 100%;
   }
-
-
 }
