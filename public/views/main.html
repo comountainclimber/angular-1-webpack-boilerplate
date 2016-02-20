@@ -6,14 +6,18 @@
         <h2 class="no-margin-bottom"> When you can fly to the mountains in <strong> 40 minutes. </strong> </h2>
         <h3 style="
         font-weight: 300;"> All-you-can-fly membership to Telluride, Aspen and Eagle-Vail for one low monthly fee. </h3>
-        <a href="#howitworks">
+<!--         <a href="#howitworks"> -->
+          <a ng-controller="scrollCtrl" ng-click="scrollToHowItWorks()">
           <md-button class="md-raised md-primary btn-100">HOW IT WORKS</md-button>
-        </a>
+          </a>
+<!--         </a> -->
       </div>
     </div>
   </div>
 
-  <div id="howitworks" flex="100" class="text-center">
+<a ng-controller="scrollCtrl"id="howitworks">
+</a>
+  <div flex="100" class="text-center">
     <h1 class="margin-bottom"> HOW IT WORKS </h1>
     <h3> Save time with the best travel solution to the mountains.</h3>
   </div>
@@ -23,6 +27,7 @@
       Your browser does not support the video tag.
     </video>
   </div>
+
 
   <div flex="100" class="text-center get-there-faster">
     <h1> Get there faster with <img src="images/freshair-logo-text.png">.</h1>
