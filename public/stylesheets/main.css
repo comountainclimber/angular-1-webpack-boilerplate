@@ -184,12 +184,12 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   -webkit-margin-after: 1em;
   letter-spacing: 3px;
   height: 60px;
-  width: 75%;
+  width: 50%;
   background-color: rgba(36, 170, 225, 0);
   border: black solid thin;
   color: black;
   box-shadow: none; }
-  @media (min-width: 300px) {
+  @media (max-width: 300px) {
     .md-button.md-freshair-theme.md-primary.btn-100 {
       width: 90%; } }
 
@@ -466,7 +466,8 @@ a {
   font-weight: 100;
   color: #000000;
   letter-spacing: 1.69px;
-  margin-top: 1em; }
+  margin-top: 1em;
+  font-size: x-large; }
 
 .grey-background {
   padding-bottom: 0%;

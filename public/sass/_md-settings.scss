@@ -196,13 +196,13 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
     letter-spacing: 3px;
     height: 60px;
 // @extend .md-button.md-freshair-theme.md-primary.btn1;
-    width: 75%;
+    width: 50%;
     background-color:rgba(36, 170, 225, 0);
     border: black solid thin;
     color:black;
     box-shadow: none;
 
-             @media (min-width: 300px) {
+             @media (max-width: 300px) {
       width: 90%
   }
 }
