@@ -69,7 +69,7 @@ strong {
 .page-container {
   // padding-top: 6%;
   background-color: $white;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   // padding-bottom: 2%;
 
   @media (min-width: 767px) {
@@ -90,6 +90,9 @@ strong {
   padding-bottom: 20px;
 }
 
+.padding-bottom-40 {
+  padding-bottom: 40px;
+}
 .margin-top {
   margin-top: 20px;
 }
@@ -252,11 +255,22 @@ img.md-card-image.jumbotron-image {
 }
 
 .footer {
-  background-color: $darkgrey;
-  color: $white;
-  height: 150px;
-  padding-bottom: 120px;
-  padding-top: 75px;
+background-color: #454545;
+    color: #fff;
+    /* height: 150px; */
+    /* padding-bottom: 150px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+  // p {
+  //   margin-bottom:40px;
+  // }
+
+  .icons {
+    margin-top: 15px;
+    cursor: pointer;
+  }
 }
 
 .faq-page h1 {
