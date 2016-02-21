@@ -19,7 +19,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-
 // Routes \\
 app.get('/', function(req, res, next){
   res.sendFile('index.html', {root:'./public'});
@@ -36,11 +35,6 @@ app.get('/faq', function(req, res, next){
 app.get('/memberships', function(req, res, next){
   res.sendFile('index.html', {root:'./public'});
 });
-
-// app.all('/*', function(req, res, next) {
-    // Just send the index.html for other files to support HTML5Mode
-//     res.sendFile('index.html', { root:__dirname + '/public' });
-// });
 
 app.post('/homepageform', function(req, res, next){
   var postData = querystring.stringify({
@@ -67,10 +61,6 @@ app.post('/homepageform', function(req, res, next){
     console.log('Body: ' + chunk);
   });
 });
-
-
-// post the data
-
 request.write(postData);
 request.end();
 });
@@ -102,18 +92,9 @@ app.post('/contactpageform', function(req, res, next){
     console.log('Body: ' + chunk);
   });
 });
-
-  request.write(postData);
+request.write(postData);
 request.end();
 });
-
-// request.on('error', function(e){
-//   console.log("Problem with request " + e.message);
-// });
-
-
-
-
 
 // Creating Server and Listening for Connections \\
 var port = 80;

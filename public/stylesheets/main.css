@@ -365,14 +365,6 @@ strong {
   height: 90vh;
   overflow: hidden;
   width: 100vw; }
-  @media (max-width: 768px) {
-    .jumbo {
-      background: url("../images/mt-emmons-shrink2-half.png") no-repeat;
-      background-size: cover;
-      height: 90vh;
-      overflow: hidden;
-      width: 100vw;
-      background-position: right; } }
   @media (min-width: 1250px) {
     .jumbo .content-column {
       padding-bottom: 250px; } }

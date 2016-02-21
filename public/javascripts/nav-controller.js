@@ -45,7 +45,7 @@ angular.module('freshAir')
           .then(function () {
             $log.debug("toggle " + navID + " is done");
           });
-      }
+      };
     }
   })
 
@@ -56,4 +56,4 @@ angular.module('freshAir')
           $log.debug("close LEFT is done");
         });
     };
-  })
+  });
