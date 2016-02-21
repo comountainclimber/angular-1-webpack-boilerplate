@@ -50,7 +50,8 @@
   margin-right: 2px; }
 
 .logo {
-  height: 80px;
+  height: 70px;
+  padding: 5px;
   vertical-align: middle; }
   @media (max-width: 900px) {
     .logo {
