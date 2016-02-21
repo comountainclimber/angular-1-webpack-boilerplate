@@ -57,6 +57,10 @@ strong {
 
   @media (max-width: 768px) {
     background: url('../images/mt-emmons-shrink2-half.png') no-repeat;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+    width: 100vw;
   }
 
   .content-column {
