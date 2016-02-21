@@ -32,3 +32,9 @@ angular.module('freshAir')
     $locationProvider.html5Mode(true);
       
   }]);
+
+angular.module('freshAir').run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
+    $rootScope.$on("$locationChangeSuccess", function() {
+                $anchorScroll();
+    });
+}]);
