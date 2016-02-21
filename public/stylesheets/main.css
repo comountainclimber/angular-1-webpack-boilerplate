@@ -85,7 +85,10 @@
 .md-sidenav-left.md-sidenav-left {
   background-color: #263248; }
 
-.md-content.md-freshair-theme {
+md-content.md-freshair-theme.side-nav {
+  background-color: #fff; }
+
+md-backdrop.md-opaque.md-freshair-theme {
   background-color: #fff; }
 
 .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button {
@@ -154,7 +157,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   margin: auto;
-  width: 50%;
+  width: 80%;
   margin-bottom: 20px; }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
@@ -189,6 +192,9 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
       width: 100%; } }
 
 .faq-page .ng-hide-remove {
+  animation: 0.5s fadeIn ease; }
+
+.animated-form .ng-hide-remove {
   animation: 0.5s fadeIn ease; }
 
 /* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
@@ -359,6 +365,9 @@ strong {
   height: 90vh;
   overflow: hidden;
   width: 100vw; }
+  @media (max-width: 768px) {
+    .jumbo {
+      background: url("../images/mt-emmons-shrink2-half.png") no-repeat; } }
   @media (min-width: 1250px) {
     .jumbo .content-column {
       padding-bottom: 250px; } }

@@ -1,12 +1,38 @@
 angular.module('freshAir')
-  .controller('mainCtrl', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll) {
+  .controller('mainCtrl', ['$scope', '$http', function($scope, $http) {
 
-    // $scope.greeting = "hello world";
+    $scope.hideForm = false;
 
-    // $scope.scrollToHowItWorks = function(){
-    //   $location.hash('howitworks');
+    $scope.letsGetStarted = function () {
+      $scope.showThankYou = true;
 
-    //   $anchorScroll();
-    // }
+       var postData = {
+          firstname: $scope.user.firstname,
+          lastname: $scope.user.lastname,
+          email: $scope.user.email
+        };
+
+      $http.post('/homepageform', postData);
+
+      $scope.hideForm = true; 
+    };
+
+
+     $scope.hideContactForm = false;
+
+    $scope.submitQuestionForm = function () {
+
+       var postData = {
+          firstname: $scope.user.firstname,
+          lastname: $scope.user.lastname,
+          email: $scope.user.email,
+          phone: $scope.user.phone,
+          question: $scope.user.question
+        };
+
+        $http.post('/contactpageform', postData);
+
+        $scope.hideContactForm = true;
+    };
 
 }]);

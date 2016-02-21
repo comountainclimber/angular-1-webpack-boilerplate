@@ -31,7 +31,11 @@ $primary-button-on-hover: #198ab9;
 //   margin-bottom: 60px;
 // }
 
-.md-content.md-freshair-theme {
+md-content.md-freshair-theme.side-nav {
+  background-color: $white;
+}
+
+md-backdrop.md-opaque.md-freshair-theme {
   background-color: $white;
 }
 
@@ -120,7 +124,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   margin: auto;
-  width:50%;
+  width:80%;
       margin-bottom: 20px;
 }
 

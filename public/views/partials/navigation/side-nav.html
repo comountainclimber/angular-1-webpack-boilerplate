@@ -1,0 +1,71 @@
+<div ng-controller="NavCtrl">
+  <div layout="column" flex ng-cloak>
+    <section layout="row" flex>
+      <md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-z2" flex>
+      <md-content class="side-nav">
+      <div class="nav-header">
+        <a href="/" ng-click="close()">
+          <img src="/images/header-logo-mobile.png">
+        </a>
+      </div>
+      
+      </md-content>
+      <md-content>
+      </md-content>
+      <md-content class="side-nav">
+      <div class="text-center">
+        <md-button class="md-raised md-primary nav-button" href="/memberships" ng-click="close()">
+        MEMBERSHIPS
+        </md-button>
+      </div>
+      </md-content>
+      <md-content class="side-nav">
+      <div class="text-center">
+        <md-button class="md-raised md-primary nav-button" href="/faq" ng-click="close()">
+        FAQ
+        </md-button>
+      </div>
+      </md-content>
+      <md-content class="side-nav">
+      <div class="text-center">
+        <md-button class="md-raised md-primary nav-button" href="/contact" ng-click="close()">
+        CONTACT
+        </md-button>
+      </div>
+      <div class="text-center">
+        <md-button class="md-raised md-primary nav-button" href="https://freshair.checkfront.com/reserve/" target="blank" ng-click="close()">
+        SIGN IN
+        </md-button>
+      </div>
+      </md-content>
+      
+      <div layout class="padding-top" >
+        <a class="margin-auto" href="https://www.facebook.com/flyfreshair/?fref=ts" target="blank">
+        <img style="
+    width: 35px;
+"src="/images/icons/facebook.png">
+        </a>
+
+<!--         <a show-xs hide-gt-xs class="margin-auto" href="fb://profile/flyfreshjets" target="blank">
+        <img style="
+    width: 35px;
+"src="/images/icons/facebook.png">
+        </a>
+         -->
+        <a class="margin-auto" href="https://www.instagram.com/flyfreshjets/" target="blank">
+        <img style="
+    width: 35px;
+" class="margin-auto" src="/images/icons/instagram.png">
+        </a>
+<!-- 
+       <a show-xs hide-gt-xs class="margin-auto" href="instagram://flyfreshjets" target="blank">
+        <img style="
+    width: 35px;
+" class="margin-auto" src="/images/icons/instagram.png">
+        </a> -->
+
+      </div>
+      </md-sidenav>
+    </section>
+  </div>
+</div>

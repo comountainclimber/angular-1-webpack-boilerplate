@@ -55,6 +55,10 @@ strong {
   overflow: hidden;
   width: 100vw;
 
+  @media (max-width: 768px) {
+    background: url('../images/mt-emmons-shrink2-half.png') no-repeat;
+  }
+
   .content-column {
     @media (min-width: 1250px) {
       padding-bottom: 250px;
