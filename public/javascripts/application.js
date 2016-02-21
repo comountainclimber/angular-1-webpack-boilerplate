@@ -1,4 +1,4 @@
-angular.module('freshAir', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMessages']);
+angular.module('freshAir', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMessages', 'duScroll']);
 
 angular.module('freshAir')
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
