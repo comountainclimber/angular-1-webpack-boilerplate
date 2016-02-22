@@ -35,4 +35,26 @@ angular.module('freshAir')
         $scope.hideContactForm = true;
     };
 
+
+    $scope.membershipOptions = [
+    "Personal","Family", "Business"
+    ];
+
+    $scope.hideMemberForm = false;
+
+    $scope.membershipFormSubmission = function () {
+      $scope.hideMemberForm = true;
+
+      var postData = {
+          firstname: $scope.user.firstname,
+          lastname: $scope.user.lastname,
+          email: $scope.user.email,
+          option: $scope.user.membershipoption.option
+        };
+
+        $http.post('/membershippageform', postData);
+    };
+
+
+
 }]);

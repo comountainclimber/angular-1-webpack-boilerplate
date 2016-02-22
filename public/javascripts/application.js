@@ -13,7 +13,7 @@ angular.module('freshAir')
     $routeProvider
       .when('/memberships', {
         templateUrl : '/views/memberships.html',
-        controller : 'faqCtrl'
+        controller : 'mainCtrl'
       });
 
     $routeProvider

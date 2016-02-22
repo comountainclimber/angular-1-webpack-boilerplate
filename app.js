@@ -96,8 +96,38 @@ request.write(postData);
 request.end();
 });
 
+app.post('/membershippageform', function(req, res, next){
+  var postData = querystring.stringify({
+    'email': req.body.email,
+    'firstname': req.body.firstname,
+    'lastname': req.body.lastname,
+    'options': req.body.option
+  });
+
+  var options = {
+    hostname: 'forms.hubspot.com',
+    path: 'https://forms.hubspot.com/uploads/form/v2/560492/e7b130d1-f069-440f-8af1-a94c7b67733f',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': postData.length
+    }
+  };
+
+  var request = http.request(options, function(response){
+  console.log("Status: " + response.statusCode);
+  console.log("Headers: " + JSON.stringify(response.headers));
+  response.setEncoding('utf8');
+  response.on('data', function(chunk){
+    console.log('Body: ' + chunk);
+  });
+});
+request.write(postData);
+request.end();
+});
+
 // Creating Server and Listening for Connections \\
-var port = 80;
+var port = 3000;
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 

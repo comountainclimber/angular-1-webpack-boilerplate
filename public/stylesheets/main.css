@@ -76,7 +76,7 @@
   letter-spacing: 2px;
   color: #fff; }
 
-.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2 {
+.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2, .md-button.md-freshair-theme.md-primary.btn3 {
   letter-spacing: 3px;
   color: #fff; }
 
@@ -85,6 +85,12 @@
 
 .md-sidenav-left.md-sidenav-left {
   background-color: #263248; }
+
+md-input-container.md-freshair-theme.membership-form {
+  margin-bottom: -20px; }
+  @media (max-width: 600px) {
+    md-input-container.md-freshair-theme.membership-form {
+      margin-bottom: 10px; } }
 
 md-content.md-freshair-theme.side-nav {
   background-color: #fff; }
@@ -160,6 +166,16 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   margin: auto;
   width: 80%;
   margin-bottom: 20px; }
+
+.md-button.md-freshair-theme.md-primary.btn3 {
+  color: #fff;
+  height: 50px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin: auto;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 40px; }
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
   -webkit-margin-before: 1em;
@@ -445,7 +461,7 @@ strong {
   margin: auto;
   opacity: .1; }
 
-.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2 {
+.button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2, .md-button.md-freshair-theme.md-primary.btn3 {
   color: #fff;
   letter-spacing: 3px; }
 

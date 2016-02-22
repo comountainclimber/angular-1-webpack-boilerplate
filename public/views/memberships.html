@@ -3,9 +3,9 @@
     <h1 class="text-center padding-top no-margin-top">
     MEMBERSHIP OPTIONS
     </h1>
-    <h2 class="text-center margin-auto padding-bottom" flex-gt-xs="80">
+<!--     <h2 class="text-center margin-auto padding-bottom" flex-gt-xs="80">
       <a href="/contact">Contact us</a> to get started.
-    </h2>
+    </h2> -->
     <div layout="row" class="grey-background margin-auto" flex="100" >
       <div layout="row" flex-gt-sm="80" layout-xs="column" layout-xs="column" layout-padding class="margin-auto">
         <div flex class="text-center member-details">
@@ -53,6 +53,61 @@
       </div>
     </div>
   </div>
+
+    <h2 ng-hide="hideMemberForm" class="text-center margin-auto padding-bottom" flex-gt-xs="80">
+      Select a membership option to get started.
+    </h2>
+
+
+<div flex-sm="100" flex-gt-sm="95" class="padding-bottom margin-auto" layout="row" ng-hide="hideMemberForm">
+ <form  ng-submit="membershipFormSubmission()" name="userForm" class="margin-auto padding-bottom text-center">
+    <div>
+      <md-card>
+      <div layout="row" layout-xs="column" flex="100" layout-padding layout class="margin-auto padding-top">
+      <md-input-container class="membership-form" flex-gt-xs="20">
+      <label>FIRST NAME</label>
+      <input ng-model="user.firstname">
+      </md-input-container>
+      <md-input-container class="membership-form" flex-gt-xs="20">
+      <label>LAST NAME</label>
+      <input ng-model="user.lastname">
+      </md-input-container>
+      <md-input-container class="membership-form" flex-gt-xs="25">
+      <label>EMAIL</label>
+      <input name="email" ng-model="user.email"
+      required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+      <div ng-messages="userForm.email.$error">
+        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+          Your email must be between 10 and 100 characters long and look like an e-mail address.
+        </div>
+      </div>
+     
+      </md-input-container>
+      <md-input-container class="membership-form" flex-gt-xs="35">
+      <label>MEMBERSHIP OPTION</label>
+<md-select ng-model="user.membershipoption.option">
+              <md-option ng-repeat="option in membershipOptions" value="{{option}}">
+                {{option}}
+              </md-option>
+            </md-select>
+        </md-input-container>
+<!--  </md-card> -->
+  </div>
+      <div layout="row" class="margin-auto">
+      <md-button type="submit" class="md-raised md-primary btn3">
+      SUBMIT
+      </md-button>
+      </div>
+      </md-card>
+    </div>
+  </form>
+</div>
+
+
+
+
   <div ng-include src="'views/partials/footer.html'">
   </div>
 </div>
+
+

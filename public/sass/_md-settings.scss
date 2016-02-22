@@ -31,6 +31,14 @@ $primary-button-on-hover: #198ab9;
 //   margin-bottom: 60px;
 // }
 
+md-input-container.md-freshair-theme.membership-form {
+  margin-bottom: -20px;
+
+    @media (max-width: 600px) {
+    margin-bottom: 10px;
+  }
+}
+
 md-content.md-freshair-theme.side-nav {
   background-color: $white;
 }
@@ -125,8 +133,22 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   -webkit-margin-after: 1em;
   margin: auto;
   width:80%;
-      margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
+.md-button.md-freshair-theme.md-primary.btn3{
+  @extend .button-stlye;
+  color: $white;
+  height: 50px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin: auto;
+  width:250px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
   -webkit-margin-before: 1em;
