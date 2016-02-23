@@ -189,7 +189,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   box-shadow: none; }
   @media (max-width: 500px) {
     .md-button.md-freshair-theme.md-primary.btn-100 {
-      width: 90%; } }
+      width: 80%; } }
 
 .md-button.md-freshair-theme.md-primary.btn-100:hover {
   color: #fff;
@@ -382,9 +382,19 @@ strong {
   height: 90vh;
   overflow: hidden;
   width: 100vw; }
-  @media (min-width: 1250px) {
-    .jumbo .content-column {
-      padding-bottom: 250px; } }
+  @media (max-width: 1100px) {
+    .jumbo {
+      background: url("../images/emmons.png") no-repeat;
+      background-position: right;
+      background-size: cover;
+      height: 90vh;
+      overflow: hidden;
+      width: 100vw; } }
+  .jumbo .content-column {
+    padding-bottom: 3%; }
+    @media (min-width: 1250px) {
+      .jumbo .content-column {
+        padding-bottom: 250px; } }
   .jumbo h1 {
     font-weight: 400; }
 
