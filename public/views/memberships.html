@@ -54,16 +54,17 @@
     </div>
   </div>
 
-    <h2 ng-hide="hideMemberForm" class="text-center margin-auto padding-bottom" flex-gt-xs="80">
+    <h2 ng-hide="hideMemberForm" class="text-center margin-auto padding-bottom" flex="90">
       Select a membership option to get started.
     </h2>
 
 
-<div flex-sm="100" flex-gt-sm="95" class="padding-bottom margin-auto" layout="row" ng-hide="hideMemberForm">
- <form  ng-submit="membershipFormSubmission()" name="userForm" class="margin-auto padding-bottom text-center">
+<div flex class="padding-bottom" layout="row" ng-hide="hideMemberForm">
+ <form  ng-submit="membershipFormSubmission()" flex-sm="95" flex-xs="90" flex-gt-sm="90" name="userForm" class="padding-bottom margin-auto">
     <div>
 <!--       <md-card> -->
-      <div layout="row" layout-xs="column" flex="100" layout-padding layout class="margin-auto padding-top">
+      <div layout="row" layout-xs="column" flex="100" layout-padding class="padding-top">
+<!--       <div layout class="margin-auto"> -->
       <md-input-container class="membership-form" flex-gt-xs="20">
       <label>FIRST NAME</label>
       <input ng-model="user.firstname">
@@ -72,6 +73,10 @@
       <label>LAST NAME</label>
       <input ng-model="user.lastname">
       </md-input-container>
+      <md-input-container class="md-block" flex-gt-xs="25">
+          <label>PHONE</label>
+          <input ng-model="user.phone">
+          </md-input-container>
       <md-input-container class="membership-form" flex-gt-xs="25">
       <label>EMAIL</label>
       <input name="email" ng-model="user.email"
@@ -83,21 +88,21 @@
       </div>
      
       </md-input-container>
-      <md-input-container class="membership-form" flex-gt-xs="35">
+      <md-input-container class="membership-form" flex-gt-xs="40">
       <label>MEMBERSHIP OPTION</label>
 <md-select ng-model="user.membershipoption.option">
               <md-option ng-repeat="option in membershipOptions" value="{{option}}">
                 {{option}}
               </md-option>
             </md-select>
-        </md-input-container>
-<!--  </md-card> -->
+  </md-input-container>
+  </div>
   </div>
       <div layout="row" class="margin-auto">
       <md-button type="submit" class="md-raised md-primary btn3">
       SUBMIT
       </md-button>
-      </div>
+<!--       </div> -->
 <!--       </md-card> -->
     </div>
   </form>

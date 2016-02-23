@@ -32,10 +32,11 @@ $primary-button-on-hover: #198ab9;
 // }
 
 md-input-container.md-freshair-theme.membership-form {
-  margin-bottom: -20px;
+  margin-bottom: 0px;
+  // margin: auto;
 
     @media (max-width: 600px) {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
 }
 
@@ -139,7 +140,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
 .md-button.md-freshair-theme.md-primary.btn3{
   @extend .button-stlye;
   color: $white;
-  height: 50px;
+  // height: 50px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   margin: auto;

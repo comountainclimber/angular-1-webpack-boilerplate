@@ -101,7 +101,8 @@ app.post('/membershippageform', function(req, res, next){
     'email': req.body.email,
     'firstname': req.body.firstname,
     'lastname': req.body.lastname,
-    'options': req.body.option
+    'options': req.body.option,
+    'phone': req.body.phone
   });
 
   var options = {
@@ -127,7 +128,7 @@ request.end();
 });
 
 // Creating Server and Listening for Connections \\
-var port = 80;
+var port = 3000;
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 

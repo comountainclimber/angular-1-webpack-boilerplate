@@ -49,6 +49,7 @@ angular.module('freshAir')
           firstname: $scope.user.firstname,
           lastname: $scope.user.lastname,
           email: $scope.user.email,
+          phone: $scope.user.phone,
           option: $scope.user.membershipoption.option
         };
 
