@@ -430,19 +430,6 @@ strong {
 .white {
   color: #fff; }
 
-.simplified-travel-list ul {
-  margin-bottom: 0;
-  -webkit-padding-start: 20%; }
-  @media (max-width: 960px) {
-    .simplified-travel-list ul {
-      -webkit-padding-start: 30%; } }
-  @media (max-width: 668px) {
-    .simplified-travel-list ul {
-      -webkit-padding-start: 20%; } }
-  @media (max-width: 500px) {
-    .simplified-travel-list ul {
-      -webkit-padding-start: 25%; } }
-
 .text-center {
   text-align: center; }
 
@@ -459,15 +446,17 @@ strong {
   letter-spacing: 1.69px;
   margin-top: 1em; }
 
-.grey-background {
-  padding-bottom: 0%; }
-
 .darkblue-background {
   background-color: #263248; }
 
 .form-image img {
   margin: auto;
-  opacity: .1; }
+  opacity: .1;
+  width: 75px;
+  height: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0; }
 
 .button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2, .md-button.md-freshair-theme.md-primary.btn3 {
   color: #fff;
@@ -517,8 +506,6 @@ img.md-card-image.jumbotron-image {
 .footer {
   background-color: #454545;
   color: #fff;
-  /* height: 150px; */
-  /* padding-bottom: 150px; */
   padding-top: 6%;
   padding-bottom: 18%; }
   .footer img {
