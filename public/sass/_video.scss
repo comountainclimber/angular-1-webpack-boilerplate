@@ -10,13 +10,12 @@ $white: #fff;
 $primary-button-on-hover: #198ab9;
 
 .news-video {
-  // background: url("../images/chairlift-image.png") repeat;
   margin-bottom: 40px;
 }
 
 
 .news-video video {
-  background: transparent url('../images/video-still.png') no-repeat 0 0;
+  background: transparent url('../images/video-still.jpg') no-repeat 0 0;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;

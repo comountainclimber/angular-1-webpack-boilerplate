@@ -45,6 +45,7 @@
   font-weight: 100; }
 
 .md-button.md-freshair-theme.md-primary.desktop-nav-link-white i {
+  color: #fff;
   font-size: 15px;
   vertical-align: middle;
   margin-right: 2px; }
@@ -59,7 +60,8 @@
 
 .white-nav {
   font-size: 12px;
-  display: inline-block; }
+  display: inline-block;
+  color: #fff; }
 
 .mobile-logo {
   margin: auto;
@@ -71,10 +73,6 @@
 
 .desktop-nav-link {
   letter-spacing: 2px; }
-
-.md-button.md-freshair-theme.md-primary.desktop-nav-link-white {
-  letter-spacing: 2px;
-  color: #fff; }
 
 .button-stlye, .md-button.md-freshair-theme.md-primary.btn1, .md-button.md-freshair-theme.md-primary.btn2, .md-button.md-freshair-theme.md-primary.btn3 {
   letter-spacing: 3px;
@@ -198,7 +196,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   margin-bottom: 40px; }
 
 .news-video video {
-  background: transparent url("../images/video-still.png") no-repeat 0 0;
+  background: transparent url("../images/video-still.jpg") no-repeat 0 0;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -375,13 +373,23 @@ strong {
   max-width: 1500px; }
 
 .jumbo {
-  background: url("../images/shrink.jpg") no-repeat;
+  background: url("../images/emmons-compressed.jpg") no-repeat;
   background-position: right;
   background-size: cover;
   height: 90vh;
   overflow: hidden;
   width: 100vw; }
-  @media (min-width: 1250px) {
+  .jumbo .social-icon {
+    width: 35px; }
+  @media (max-width: 400px) {
+    .jumbo {
+      background: url("../images/emmons2.png") no-repeat;
+      background-position: right;
+      background-size: cover;
+      height: 90vh;
+      overflow: hidden;
+      width: 100vw; } }
+  @media (min-width: 768px) {
     .jumbo .content-column {
       padding-bottom: 250px; } }
   .jumbo h1 {
@@ -512,9 +520,8 @@ img.md-card-image.jumbotron-image {
   /* padding-bottom: 150px; */
   padding-top: 6%;
   padding-bottom: 18%; }
-  .footer .icons {
-    margin-top: 15px;
-    cursor: pointer; }
+  .footer img {
+    width: 25px; }
 
 .faq-page h1 {
   margin-bottom: 0;

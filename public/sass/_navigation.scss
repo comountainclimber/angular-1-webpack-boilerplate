@@ -66,6 +66,7 @@ $darkgrey: #454545;
 }
 
 .md-button.md-freshair-theme.md-primary.desktop-nav-link-white i {
+  color: $white;
   font-size: 15px;
   vertical-align: middle;
   margin-right: 2px;
@@ -84,6 +85,7 @@ $darkgrey: #454545;
 .white-nav {
   font-size: 12px;
   display: inline-block;
+  color: $white;
 }
 
 .mobile-logo {
@@ -98,9 +100,4 @@ $darkgrey: #454545;
 
 .desktop-nav-link {
   letter-spacing: 2px;
-}
-
-.md-button.md-freshair-theme.md-primary.desktop-nav-link-white {
-  letter-spacing: 2px;
-  color: $white;
 }

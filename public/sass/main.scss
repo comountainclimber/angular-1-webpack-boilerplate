@@ -48,7 +48,7 @@ strong {
 }
 
 .jumbo {
-  background: url('../images/shrink.jpg') no-repeat;
+  background: url('../images/emmons-compressed.jpg') no-repeat;
   background-position: right;
   background-size: cover;
   height: 90vh;
@@ -64,14 +64,18 @@ strong {
   // width: 100vw;
   // }
 
-  // @media (max-width: 400px) {
-  // background: url('../images/emmons2.png') no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // height: 90vh;
-  // overflow: hidden;
-  // width: 100vw;
-  // }
+  .social-icon {
+    width: 35px;
+  }
+
+  @media (max-width: 400px) {
+  background: url('../images/emmons2.png') no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+  width: 100vw;
+  }
 
   .content-column {
 
@@ -79,7 +83,7 @@ strong {
       // padding-bottom: 2%;
     // }
 
-    @media (min-width: 1250px) {
+    @media (min-width: 768px) {
       padding-bottom: 250px;
     }
   }
@@ -289,11 +293,14 @@ background-color: #454545;
   // p {
   //   margin-bottom:40px;
   // }
-
-  .icons {
-    margin-top: 15px;
-    cursor: pointer;
+  img {
+    width:25px;
   }
+
+  // .icons {
+  //   margin-top: 15px;
+  //   cursor: pointer;
+  // }
 }
 
 .faq-page h1 {

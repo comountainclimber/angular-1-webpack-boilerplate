@@ -22,18 +22,9 @@ $primary-button-on-hover: #198ab9;
   background-color: $darkblue;
 }
 
-// .md-button.md-freshair-theme.md-raised:not([disabled]).btn2 {
-//   color: $white;
-//   font-size: 28px;
-//   letter-spacing: 2.8px;
-//   font-weight: 100;
-//   padding: 6px;
-//   margin-bottom: 60px;
-// }
 
 md-input-container.md-freshair-theme.membership-form {
   margin-bottom: 0px;
-  // margin: auto;
 
     @media (max-width: 600px) {
     margin-bottom: 18px;
@@ -58,10 +49,6 @@ md-backdrop.md-opaque.md-freshair-theme {
   margin-bottom: 10px;
   width: 94%;
 }
-
-// .md-button.md-freshair-theme.md-raised:not([disabled]).nav-button:focus {
-//   background-color: $greyblue;
-// }
 
 .md-button.md-icon-button.md-freshair-theme {
   background-color: rgba(125, 125, 125, .2);
@@ -140,7 +127,6 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
 .md-button.md-freshair-theme.md-primary.btn3{
   @extend .button-stlye;
   color: $white;
-  // height: 50px;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   margin: auto;
@@ -148,8 +134,6 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   padding: 10px;
   margin-bottom: 40px;
 }
-
-
 
 .md-button.md-freshair-theme.md-primary.btn-100 {
   -webkit-margin-before: 1em;
