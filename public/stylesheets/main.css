@@ -18,6 +18,9 @@
     .dark-blue {
       display: none; } }
 
+.side-nav-icons img {
+  width: 35px; }
+
 .nav-header {
   text-align: center;
   background: #263248;
@@ -379,12 +382,10 @@ strong {
   height: 90vh;
   overflow: hidden;
   width: 100vw; }
-  .jumbo .social-icon {
-    width: 35px; }
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     .jumbo {
-      background: url("../images/emmons2.png") no-repeat;
-      background-position: right;
+      background: url("../images/emmons-compressed.jpg") no-repeat;
+      background-position: 80%;
       background-size: cover;
       height: 90vh;
       overflow: hidden;
@@ -461,7 +462,7 @@ strong {
 .grey-background {
   padding-bottom: 0%; }
 
-.darkgrey-background {
+.darkblue-background {
   background-color: #263248; }
 
 .form-image img {
