@@ -218,9 +218,30 @@ img.md-card-image.jumbotron-image {
     padding-top: 6%;
     padding-bottom: 18%;
 
+  h4 {
+    font-weight: 300;
+  }
+
+  a:hover {
+    font-weight: 600;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
   img {
     width:25px;
   }
+
+  // img:hover {
+  //   background-color: $primary;
+  //   border-radius: 30px;
+  //   padding:8px;
+  //   vertical-align: middle;
+  //   width:25px;
+  // }
 }
 
 .faq-page h1 {

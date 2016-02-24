@@ -508,6 +508,13 @@ img.md-card-image.jumbotron-image {
   color: #fff;
   padding-top: 6%;
   padding-bottom: 18%; }
+  .footer h4 {
+    font-weight: 300; }
+  .footer a:hover {
+    font-weight: 600; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
   .footer img {
     width: 25px; }
 
