@@ -3,6 +3,7 @@
 @import 'video';
 @import 'animation';
 @import 'typography';
+@import 'material-icons';
 
 $darkblue: #263248;
 $primary: #24aae1;
@@ -76,7 +77,7 @@ strong {
   .content-column {
 
       // @media (min-width: 1250px) {
-      padding-bottom: 3%;
+      // padding-bottom: 2%;
     // }
 
     @media (min-width: 1250px) {
