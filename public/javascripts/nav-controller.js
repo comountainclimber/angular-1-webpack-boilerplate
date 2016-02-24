@@ -1,5 +1,5 @@
 angular.module('freshAir')
-    .controller('NavCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+    .controller('NavCtrl', ['$scope', '$timeout', '$mdSidenav', '$log', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.toggleLeft = buildDelayedToggler('left');
 
 
@@ -47,13 +47,13 @@ angular.module('freshAir')
           });
       };
     }
-  })
+  }])
 
-  .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+  .controller('LeftCtrl', ['$scope', '$timeout', '$mdSidenav', '$log', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.close = function () {
       $mdSidenav('left').close()
         .then(function () {
           $log.debug("close LEFT is done");
         });
     };
-  });
+  }]);
