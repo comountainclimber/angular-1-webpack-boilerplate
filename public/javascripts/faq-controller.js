@@ -33,5 +33,5 @@ angular.module('freshAir')
       $scope.showScheduleAndReservations = false;
       $scope.showOperations = true;
     };
-    
+
 }]);
