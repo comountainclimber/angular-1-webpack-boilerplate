@@ -128,7 +128,7 @@ request.end();
 });
 
 // Creating Server and Listening for Connections \\
-var port = 3000;
+var port = 80;
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 
