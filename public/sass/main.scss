@@ -35,7 +35,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: $anchor-color;
+  color: $primary;
 }
 
 strong {
@@ -89,12 +89,24 @@ strong {
   padding-top: 20px;
 }
 
-.padding-bottom {
-  padding-bottom: 20px;
+.padding-top-40 {
+  padding-top: 40px;
 }
 
 .padding-bottom-40 {
   padding-bottom: 40px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.padding-bottom-60 {
+  padding-bottom: 60px;
 }
 .margin-top {
   margin-top: 20px;
@@ -194,29 +206,13 @@ img.md-card-image.jumbotron-image {
   width: 210px;
 }
 
-.member-details {
-  margin-bottom: 2%;
-  padding: 10px;
 
-  i {
-    background-color: $darkblue;
-    border: $primary solid;
-    border-radius: 48px;
-    color: $white;
-    padding: 10px;
-  }
-
-  h2 {
-    font-size: 26px;
-    margin-top: 10px;
-  }
-}
 
 .footer {
     background-color: $darkgrey;
     color: $white;
     padding-top: 6%;
-    padding-bottom: 18%;
+    padding-bottom: 12%;
 
   h4 {
     font-weight: 300;
@@ -277,6 +273,35 @@ img.md-card-image.jumbotron-image {
 
 .answer p {
   margin-top: 0;
+}
+
+.member-details {
+  margin-bottom: 2%;
+  padding: 10px;
+
+  i {
+    background-color: $darkblue;
+    border: $primary solid;
+    border-radius: 48px;
+    color: $white;
+    padding: 10px;
+  }
+
+  h2 {
+    // font-size: 26px;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+}
+
+.membership-page {
+  h4 {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
 }
 
 // textarea#input_4 {

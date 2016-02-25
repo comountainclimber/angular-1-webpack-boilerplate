@@ -23,6 +23,10 @@ $input-border-radius: 0;
 // $input-border: $grey-three;
 $input-height-base: 50px;
 
+p {
+  line-height: 1.3rem;
+}
+
 h1 {
   font-size: $font-size-h1 * .85;
 }

@@ -78,7 +78,7 @@ $darkgrey: #454545;
 
 .logo {
   height: 70px;
-  padding: 5px;
+  padding: 10px;
   vertical-align: middle;
 
   @media (max-width: 900px) {
@@ -87,9 +87,10 @@ $darkgrey: #454545;
 }
 
 .white-nav {
-  font-size: 12px;
+  // font-size: 12px;
   display: inline-block;
   color: $white;
+  letter-spacing: .03rem;
 }
 
 .mobile-logo {
@@ -103,5 +104,5 @@ $darkgrey: #454545;
 }
 
 .desktop-nav-link {
-  letter-spacing: 2px;
+  letter-spacing: .03rem;
 }

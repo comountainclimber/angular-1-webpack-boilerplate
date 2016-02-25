@@ -151,6 +151,22 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   }
 }
 
+.md-button.md-freshair-theme.md-primary.btn-101 {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 60%;
+  background-color: rgba(36, 170, 225, 0);
+  border: $black solid thin;
+  color: $black;
+  box-shadow: none;
+
+  @media (max-width: 768px) {
+    width: 100%
+  }
+}
+
 .md-button.md-freshair-theme.md-primary.btn-100:hover {
   color: $white;
   border: none;
