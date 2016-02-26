@@ -14,10 +14,16 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
+    "fs": "0.0.2",
+    "node-sass-middleware": "^0.9.7",
     "webpack": "^1.12.14",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   }

@@ -1,6 +1,7 @@
 var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
 var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 // var config = require('./webpack.config');
 
 // new WebpackDevServer(webpack(config), {
@@ -13,8 +14,6 @@ module.exports = {
   entry: [
     'webpack/hot/dev-server',
     'webpack-dev-server/client?http://localhost:8080',
-    // "bundle": "./entry.js",
-    // "bundle.min": "./entry.js"
     path.resolve(__dirname, './entry.js')
   ],
   devtool: '#eval-source-map',
@@ -22,11 +21,31 @@ module.exports = {
     publicPath: 'http://localhost:8080/',
     path: path.resolve(__dirname, 'build'),
     filename: "build.js"
-  },
-  // plugins: [
-  //   new webpack.optimize.UglifyJsPlugin({
-  //     include: /\.min\.js$/,
-  //     minimize: false
-  //   })
-  // ]
+  }
+  // module: {
+  //   loaders: [
+  //     {
+  //       test: /\.scss$/,
+  //       loaders: ["style", "css", "sass"]
+  //     }
+  //   ]
+  // },
+  // sassLoader: {
+  //   includePaths: [path.resolve(__dirname, "./public/sass/main.scss")]
+  // }
 };
+
+
+
+// module.exports = {
+//   entry: {
+//    app: [path.resolve(__dirname, './entry.js')]
+//   },
+  
+//   output: {
+//     path: path.resolve(__dirname),
+//     publicPath: "/public/",
+//     filename: "bundle.js"
+//   }
+// };
+

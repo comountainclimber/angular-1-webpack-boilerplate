@@ -5,19 +5,39 @@ var http = require('http');
 var querystring = require('querystring');
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
+var sassMiddleware = require('node-sass-middleware');
+var fs = require('fs');
+var path = require('path');
+
 // Create Express App Object \\
-var app = express();
+var app = module.exports = express();
+
+
+app.use(
+  sassMiddleware({
+    src: __dirname + '/public/sass',
+    dest: __dirname + '/public/stylesheets',
+    debug: true,
+    outputStyle: 'compressed',
+    prefix:  '/stylesheets'
+  })
+);
+
+app.use(express.static(path.join(__dirname, '/public')));
+
 
 // Application Configuration \\
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
+
+
 
 // Routes \\
 app.get('/', function(req, res, next){
@@ -126,6 +146,17 @@ app.post('/membershippageform', function(req, res, next){
 request.write(postData);
 request.end();
 });
+
+// var webpackDevServer = require("webpack-dev-server");
+// var webpack = require("webpack");
+// var config = require("./webpack.config.js");
+// config.entry.app.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
+// var compiler = webpack(config);
+// var server = new webpackDevServer(compiler, {
+//   hot: true
+// });
+// server.listen(8080);
+
 
 // Creating Server and Listening for Connections \\
 var port = 3000;
