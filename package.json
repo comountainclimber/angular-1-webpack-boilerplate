@@ -4,7 +4,10 @@
   "description": "FreshAir is private jet subscription service for unlimited flights to the mountains of Colorado.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "author": "Maxwell Lasky",
   "license": "ISC",
@@ -13,5 +16,9 @@
     "express": "^4.13.4",
     "webpack": "^1.12.14",
     "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }
