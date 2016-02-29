@@ -1,6 +1,8 @@
 angular.module('freshAir')
   .controller('faqCtrl', ['$scope', '$http', '$window', '$mdMedia', '$mdDialog', function($scope, $http, $mdDialog, $mdMedia, $window) {
 
+    // console.log("welcome to the FAQ")
+
     $scope.showWhatIsFreshAir = true;
     $scope.showMemberships = false;
     $scope.showScheduleAndReservations = false;

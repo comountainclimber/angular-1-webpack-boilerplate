@@ -22,7 +22,6 @@ angular.module('freshAir')
         controller : 'mainCtrl'
       });
 
-
     $routeProvider
       .when('/faq', {
         templateUrl : '/views/faq.html',

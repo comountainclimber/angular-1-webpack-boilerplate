@@ -17,8 +17,7 @@ angular.module('freshAir')
       $scope.hideForm = true; 
     };
 
-
-     $scope.hideContactForm = false;
+    $scope.hideContactForm = false;
 
     $scope.submitQuestionForm = function () {
 
@@ -34,7 +33,6 @@ angular.module('freshAir')
 
         $scope.hideContactForm = true;
     };
-
 
     $scope.membershipOptions = [
     "Personal","Family", "Business"
@@ -55,7 +53,5 @@ angular.module('freshAir')
 
         $http.post('/membershippageform', postData);
     };
-
-
 
 }]);
