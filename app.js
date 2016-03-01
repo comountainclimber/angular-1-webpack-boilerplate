@@ -56,6 +56,10 @@ app.get('/memberships', function(req, res, next){
   res.sendFile('index.html', {root:'./public'});
 });
 
+app.get('/map', function(req, res, next){
+  res.sendFile('index.html', {root:'./public'});
+});
+
 app.post('/homepageform', function(req, res, next){
   var postData = querystring.stringify({
     'email': req.body.email,

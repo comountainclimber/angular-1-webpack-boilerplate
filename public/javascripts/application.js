@@ -28,6 +28,12 @@ angular.module('freshAir')
         controller : 'faqCtrl'
       });
 
+    $routeProvider
+      .when('/map', {
+        templateUrl : '/views/map.html',
+        controller : 'mapCtrl'
+      });
+
     $locationProvider.html5Mode(true);
       
   }]);

@@ -232,6 +232,10 @@ img.md-card-image.jumbotron-image {
     width:25px;
   }
 
+  img:hover {
+    opacity: .5;
+  }
+
   // img:hover {
   //   background-color: $primary;
   //   border-radius: 30px;
@@ -239,6 +243,19 @@ img.md-card-image.jumbotron-image {
   //   vertical-align: middle;
   //   width:25px;
   // }
+}
+
+md-card.map-card.md-freshair-theme {
+background: url("../images/map.png") no-repeat;
+    height: initial;
+    width: 780px;
+    height: 515px;
+    border-radius: 10px;
+
+  img:hover {
+    cursor: pointer;
+    opacity: .4;
+  }
 }
 
 .faq-page h1 {

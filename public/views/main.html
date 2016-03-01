@@ -6,14 +6,17 @@
         <h2 class="no-margin-bottom"> When you can fly to the mountains in <strong> 40 minutes. </strong> </h2>
         <h3 style="
         font-weight: 300;"> All-you-can-fly membership to Telluride, Aspen and Eagle-Vail for one low monthly fee. </h3>
-          <a ng-controller="scrollCtrl" du-smooth-scroll du-scrollspy href="#howitworks">
+        <a ng-controller="scrollCtrl" du-smooth-scroll du-scrollspy href="#howitworks">
           <md-button class="md-raised md-primary btn-100">HOW IT WORKS</md-button>
-          </a>
+        </a>
       </div>
     </div>
   </div>
-<a ng-controller="scrollCtrl "id="howitworks">
-</a>
+      <div ng-include class="margin-bottom" src="'views/map.html'">
+  </div>
+
+  <a ng-controller="scrollCtrl "id="howitworks">
+  </a>
   <div flex="100" class="text-center padding-top">
     <h1 class="margin-bottom"> HOW IT WORKS </h1>
     <h3> Save time with the best travel solution to the mountains.</h3>
@@ -29,13 +32,17 @@
   </div>
   <div ng-include class="margin-bottom" src="'views/partials/member-benefits.html'">
   </div>
-<md-card flex-gt-sm="75" flex-sm="90" flex-xs="95" class="margin-auto margin-bottom">
+
+
+
+
+  <md-card flex-gt-sm="75" flex-sm="90" flex-xs="95" class="margin-auto margin-bottom">
   <div ng-include style="
     background-color: rgba(224,224,224,1);
     padding-bottom: 40px;
-" src="'views/partials/conversation.html'">
+    " src="'views/partials/conversation.html'">
   </div>
-</md-card>
-  </div>
-  <div ng-include src="'views/partials/footer.html'"> 
+  </md-card>
+</div>
+<div ng-include src="'views/partials/footer.html'">
 </div>
