@@ -1,7 +1,7 @@
 angular.module('freshAir', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMessages', 'duScroll']);
 
 angular.module('freshAir')
-  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider, $rootScope, $document){
     
     $routeProvider
       .when('/', {
@@ -9,7 +9,6 @@ angular.module('freshAir')
         controller : 'mainCtrl'
       });
       
-
     $routeProvider
       .when('/memberships', {
         templateUrl : '/views/memberships.html',
@@ -28,12 +27,12 @@ angular.module('freshAir')
         controller : 'faqCtrl'
       });
 
+    $routeProvider
+      .when('/map', {
+        templateUrl : '/views/map.html',
+        controller : 'mapCtrl'
+      });
+
     $locationProvider.html5Mode(true);
       
-  }]);
-
-angular.module('freshAir').run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
-    $rootScope.$on("$locationChangeSuccess", function() {
-                $anchorScroll();
-    });
 }]);

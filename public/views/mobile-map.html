@@ -1,0 +1,25 @@
+<div ng-controller="mapCtrl">
+    <div flex="100" class="text-center padding-top">
+        <h1 class="margin-bottom"> OUR FLIGHTS </h1>
+    </div>
+    <div layout="row">
+        <img flex-gt-xs="80" flex-xs="95" style="width:95%; height:100%;" src="../images/map/entire-map.png" class="margin-auto">
+    </div>
+    <div layout="row" flex="90" flex-offset="5" layout-wrap class="margin-bottom margin-top word-wrap" >
+        <md-button ng-click="showTelluride($event, 'Telluride')" class="md-button md-raised map-button-mobile">
+        TELLURIDE
+        </md-button>
+        <md-button ng-click="showAspen($event, 'Aspen')" class="md-button md-raised map-button-mobile">
+        ASPEN
+        </md-button>
+        <md-button ng-click="showVail($event, 'Vail')" class="md-button md-raised map-button-mobile">
+        VAIL
+        </md-button>
+        <md-button ng-click="showSteamboat($event, 'Steamboat Springs')" class="md-button md-raised map-button-mobile">
+        STEAMBOAT
+        </md-button>
+        <md-button ng-click="showCb($event, 'Crested Butte')" class="md-button md-raised map-button-mobile">
+        CRESTED BUTTE
+        </md-button>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="desktop-map" ng-controller="mapCtrl">
+    <div flex="100" class="text-center padding-top">
+        <h1 class="margin-bottom"> OUR FLIGHTS </h1>
+    </div>
+    <div layout="row" class="">
+        <div class="margin-auto">
+            <md-card flex class="map-card">
+            <img class="denver" src="../images/map/denver.png">
+            <img class="telluride destination" ng-click="showTelluride($event, 'Telluride')" src="../images/map/telluride.png">
+            <img class="vail destination" ng-click="showVail($event, 'Vail')" src="../images/map/vail.png">
+            <img class="cb destination" ng-click="showCb($event, 'Crested Butte')" src="../images/map/crested-butte.png">
+            <img class="aspen destination" ng-click="showAspen($event, 'Aspen')" src="../images/map/aspen.png">
+            <img class="steamboat destination" ng-click="showSteamboat($event, 'Steamboat Springs')" src="../images/map/steamboat.png">
+            </md-card>
+            <div flex class="margin-bottom margin-top" layout="row">
+                <md-button ng-click="showTelluride($event, 'Telluride')" class="md-button md-raised margin-auto map-button">
+                TELLURIDE
+                </md-button>
+                <md-button ng-click="showAspen($event, 'Aspen')" class="md-button md-raised margin-auto map-button">
+                ASPEN
+                </md-button>
+                <md-button ng-click="showVail($event, 'Vail')" class="md-button md-raised margin-auto map-button">
+                VAIL
+                </md-button>
+                <md-button ng-click="showCb($event, 'Crested Butte')" class="md-button md-raised margin-auto map-button">
+                CRESTED BUTTE
+                </md-button>
+                <md-button ng-click="showSteamboat($event, 'Steamboat Springs')" class="md-button md-raised margin-auto map-button">
+                STEAMBOAT SPRINGS
+                </md-button>
+            </div>
+        </div>
+    </div>
+</div>

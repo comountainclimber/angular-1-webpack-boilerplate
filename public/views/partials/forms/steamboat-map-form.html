@@ -1,0 +1,40 @@
+<div ng-controller="mapCtrl" flex-xs="95" flex-gt-sm="50" flex-sm="75" layout="column" class="margin-auto">
+  <layout="column" ng-cloak class="md-inline-form">
+  <md-content layout-padding>
+  <div>
+    <form ng-submit="submitSteamboatRequestForm()" name="userForm" style="padding:20px; background-color:white;">
+      <div layout-gt-md="column">
+        <md-input-container class="md-block" flex-gt-sm>
+        <label>FIRST NAME</label>
+        <input ng-model="user.firstname">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+        <label>LAST NAME</label>
+        <input ng-model="user.lastname">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+        <label>EMAIL</label>
+        <input name="email" ng-model="user.email"
+        required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+        <div ng-messages="userForm.email.$error">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+            Your email must be between 10 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+        <label>PHONE</label>
+        <input ng-model="user.phone">
+        </md-input-container>
+      </div>
+      <div class="row">
+        <div class="text-center">
+          <md-button type="submit" class="md-raised md-primary btn1">
+          SUBMIT
+          </md-button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </md-content>
+</div>

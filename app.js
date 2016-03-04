@@ -37,8 +37,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-
-
 // Routes \\
 app.get('/', function(req, res, next){
   res.sendFile('index.html', {root:'./public'});
@@ -53,6 +51,10 @@ app.get('/faq', function(req, res, next){
 });
 
 app.get('/memberships', function(req, res, next){
+  res.sendFile('index.html', {root:'./public'});
+});
+
+app.get('/map', function(req, res, next){
   res.sendFile('index.html', {root:'./public'});
 });
 
@@ -147,19 +149,67 @@ request.write(postData);
 request.end();
 });
 
-// var webpackDevServer = require("webpack-dev-server");
-// var webpack = require("webpack");
-// var config = require("./webpack.config.js");
-// config.entry.app.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
-// var compiler = webpack(config);
-// var server = new webpackDevServer(compiler, {
-//   hot: true
-// });
-// server.listen(8080);
+app.post('/steamboatrequest', function(req, res, next){
+  var postData = querystring.stringify({
+    'email': req.body.email,
+    'firstname': req.body.firstname,
+    'lastname': req.body.lastname,
+    'phone': req.body.phone
+  });
 
+  var options = {
+    hostname: 'forms.hubspot.com',
+    path: 'https://forms.hubspot.com/uploads/form/v2/560492/ffaa53b4-d18c-4db2-bef9-627420a42468',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': postData.length
+    }
+  };
+
+  var request = http.request(options, function(response){
+  console.log("Status: " + response.statusCode);
+  console.log("Headers: " + JSON.stringify(response.headers));
+  response.setEncoding('utf8');
+  response.on('data', function(chunk){
+    console.log('Body: ' + chunk);
+  });
+});
+request.write(postData);
+request.end();
+});
+
+app.post('/cbrequest', function(req, res, next){
+  var postData = querystring.stringify({
+    'email': req.body.email,
+    'firstname': req.body.firstname,
+    'lastname': req.body.lastname,
+    'phone': req.body.phone
+  });
+
+  var options = {
+    hostname: 'forms.hubspot.com',
+    path: 'https://forms.hubspot.com/uploads/form/v2/560492/57adec83-adfb-4d6c-85b9-369613b567bf',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': postData.length
+    }
+  };
+
+  var request = http.request(options, function(response){
+  console.log("Status: " + response.statusCode);
+  console.log("Headers: " + JSON.stringify(response.headers));
+  response.setEncoding('utf8');
+  response.on('data', function(chunk){
+    console.log('Body: ' + chunk);
+  });
+});
+request.write(postData);
+request.end();
+});
 
 // Creating Server and Listening for Connections \\
-// var port = 3000;
 var port = 80;
 app.listen(port, function(){
   console.log('Server running on port ' + port);

@@ -3,6 +3,7 @@
 @import 'video';
 @import 'animation';
 @import 'typography';
+@import 'map-feature';
 
 $darkblue: #263248;
 $primary: #24aae1;
@@ -24,10 +25,9 @@ $anchor-color: #6ec4e9;
   outline: none;
 }
 
-body {
-  background: $darkblue;
+body, html {
+  background-color: $darkblue;
   font-family: $font-family-sans-serif;
-  // display:none;
 }
 
 h1, h2, h3 {
@@ -109,12 +109,21 @@ strong {
 .padding-bottom-60 {
   padding-bottom: 60px;
 }
+
+.padding-bottom-80 {
+  padding-bottom: 80px;
+}
+
 .margin-top {
   margin-top: 20px;
 }
 
 .margin-bottom {
   margin-bottom: 20px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
 }
 
 .no-margin {
@@ -162,10 +171,10 @@ strong {
   margin: auto;
   opacity: .1;
   width: 75px;
-    height: 75px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
+  height: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .button-stlye {
@@ -207,8 +216,6 @@ img.md-card-image.jumbotron-image {
   width: 210px;
 }
 
-
-
 .footer {
     background-color: $darkgrey;
     color: $white;
@@ -232,13 +239,9 @@ img.md-card-image.jumbotron-image {
     width:25px;
   }
 
-  // img:hover {
-  //   background-color: $primary;
-  //   border-radius: 30px;
-  //   padding:8px;
-  //   vertical-align: middle;
-  //   width:25px;
-  // }
+  img:hover {
+    opacity: .5;
+  }
 }
 
 .faq-page h1 {
@@ -289,9 +292,8 @@ img.md-card-image.jumbotron-image {
   }
 
   h2 {
-    // font-size: 26px;
-    margin-top: 10px;
     font-weight: 400;
+    margin-top: 10px;
   }
 }
 
@@ -304,7 +306,3 @@ img.md-card-image.jumbotron-image {
     font-weight: 400;
   }
 }
-
-// textarea#input_4 {
-//   line-height: 60px;
-// }
