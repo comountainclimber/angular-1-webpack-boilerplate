@@ -1,8 +1,12 @@
 angular.module('freshAir', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMessages', 'duScroll']);
 
 angular.module('freshAir')
-  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+  .config(['$routeProvider', '$locationProvider', '$rootScope', '$document', function($routeProvider, $locationProvider, $rootScope, $document){
     
+    // $rootScope.$on('$stateChangeSuccess', function() {
+    //   $document[0].body.scrollTop = $document[0].documentElement.scrollTop = 0;
+    // });
+
     $routeProvider
       .when('/', {
         templateUrl : '/views/main.html',
@@ -38,8 +42,9 @@ angular.module('freshAir')
       
   }]);
 
-angular.module('freshAir').run(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
-    $rootScope.$on("$locationChangeSuccess", function() {
-                $anchorScroll();
-    });
-}]);
+// angular.module('freshAir')
+//   .controller(["$rootScope", "$anchorScroll" , function ($rootScope, $anchorScroll) {
+//   $rootScope.$on('$stateChangeSuccess', function() {
+//      document.body.scrollTop = document.documentElement.scrollTop = 0;
+//   });
+// }]);

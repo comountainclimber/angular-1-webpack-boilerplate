@@ -1,4 +1,4 @@
-<div style="max-width:800px;" ng-controller="mapCtrl">
+<div style="max-width:800px;" ng-controller="mapCtrl" ng-cloak>
 <div layout flex="100">
 <i ng-click="cancel()" style="text-align:right; cursor:pointer" class="material-icons">&#xE5CD;</i>
 </div>
@@ -17,7 +17,7 @@
 <!--   </div> -->
   <div layout>
     <h4 flex="95" class="text-center margin-auto padding-top padding-bottom-60">
-    <a href="/contact"> Contact us</a> to speak with one of our specialists and to receive flight times.
+    <a href="/contact" ng-click="cancel()"> Contact us</a> to speak with one of our specialists and to receive flight times.
     </h4>
   </div>
 </div>
