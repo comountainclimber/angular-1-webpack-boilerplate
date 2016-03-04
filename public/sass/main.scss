@@ -3,6 +3,7 @@
 @import 'video';
 @import 'animation';
 @import 'typography';
+@import 'map-feature';
 
 $darkblue: #263248;
 $primary: #24aae1;
@@ -24,10 +25,9 @@ $anchor-color: #6ec4e9;
   outline: none;
 }
 
-body {
-  background: $darkblue;
+body, html {
+  background-color: $darkblue;
   font-family: $font-family-sans-serif;
-  // display:none;
 }
 
 h1, h2, h3 {
@@ -171,10 +171,10 @@ strong {
   margin: auto;
   opacity: .1;
   width: 75px;
-    height: 75px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
+  height: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .button-stlye {
@@ -216,8 +216,6 @@ img.md-card-image.jumbotron-image {
   width: 210px;
 }
 
-
-
 .footer {
     background-color: $darkgrey;
     color: $white;
@@ -243,27 +241,6 @@ img.md-card-image.jumbotron-image {
 
   img:hover {
     opacity: .5;
-  }
-
-  // img:hover {
-  //   background-color: $primary;
-  //   border-radius: 30px;
-  //   padding:8px;
-  //   vertical-align: middle;
-  //   width:25px;
-  // }
-}
-
-md-card.map-card.md-freshair-theme {
-background: url("../images/map.png") no-repeat;
-    height: initial;
-    width: 780px;
-    height: 515px;
-    border-radius: 10px;
-
-  img.destination:hover {
-    cursor: pointer;
-    opacity: .4;
   }
 }
 
@@ -315,9 +292,8 @@ background: url("../images/map.png") no-repeat;
   }
 
   h2 {
-    // font-size: 26px;
-    margin-top: 10px;
     font-weight: 400;
+    margin-top: 10px;
   }
 }
 
@@ -330,7 +306,3 @@ background: url("../images/map.png") no-repeat;
     font-weight: 400;
   }
 }
-
-// textarea#input_4 {
-//   line-height: 60px;
-// }

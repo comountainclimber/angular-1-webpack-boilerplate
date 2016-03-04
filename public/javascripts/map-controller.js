@@ -1,5 +1,5 @@
 angular.module('freshAir')
-  .controller('mapCtrl', ['$scope', '$mdDialog', '$mdMedia', function($scope, $mdDialog, $mdMedia) {
+  .controller('mapCtrl', ['$scope', '$mdDialog', '$mdMedia', '$http', function($scope, $mdDialog, $mdMedia, $http) {
       
     $scope.showCb = function(ev, location) {
       var useFullScreen ;
@@ -97,6 +97,34 @@ angular.module('freshAir')
 
     $scope.cancel = function() {
       $mdDialog.cancel();
+    };
+
+    // *-*-*-*-*-*-*-*-*  MAP FORM SUBMISSIONS *-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+    $scope.submitSteamboatRequestForm = function () {
+      var postData = {
+        firstname: $scope.user.firstname,
+        lastname: $scope.user.lastname,
+        email: $scope.user.email,
+        phone: $scope.user.phone,
+      };
+
+      $http.post('/steamboatrequest', postData);
+
+      $scope.cancel();
+    };
+
+    $scope.submitCbRequestForm = function () {
+      var postData = {
+        firstname: $scope.user.firstname,
+        lastname: $scope.user.lastname,
+        email: $scope.user.email,
+        phone: $scope.user.phone,
+      };
+
+      $http.post('/cbrequest', postData);
+
+      $scope.cancel();
     };
 
 }]);

@@ -1,79 +1,34 @@
-<div ng-controller="mapCtrl">
+<div class="desktop-map" ng-controller="mapCtrl">
     <div flex="100" class="text-center padding-top">
         <h1 class="margin-bottom"> OUR FLIGHTS </h1>
     </div>
     <div layout="row" class="">
         <div class="margin-auto">
-
             <md-card flex class="map-card">
-            <img style="
-            position: relative;
-            width: 85px;
-            height: 50px;
-            top: 200px;
-            left: 400px;
-            " src="../images/map/denver.png">
-            <img class="destination" ng-click="showTelluride($event, 'Telluride')" style="
-            position: relative;
-            width: 380px;
-            height: 255px;
-            top: 120px;
-            left: 48px;
-            " src="../images/map/telluride.png">
-            <img class="destination" ng-click="showVail($event, 'Vail')" style="
-            position: relative;
-            width: 230px;
-            height: 108px;
-            bottom: 173px;
-            left: 209px;
-            
-            " src="../images/map/vail.png">
-            <img class="destination"  ng-click="showCb($event, 'Crested Butte')" style="
-            position: relative;
-            width: 262px;
-            height: 160px;
-            bottom: 194px;
-            left: 168px;
-            " src="../images/map/crested-butte.png">
-            <img class="destination"  ng-click="showAspen($event, 'Aspen')" style="
-            position: relative;
-            width: 275px;
-            height: 160px;
-            bottom: 351px;
-            left: 155px;
-            
-            " src="../images/map/aspen.png">
-            <img class="destination"  ng-click="showSteamboat($event, 'Steamboat Springs')" style="
-            position: relative;
-            width: 340px;
-            height: 130px;
-            bottom: 620px;
-            left: 100px;
-            
-            " src="../images/map/steamboat.png">
+            <img class="denver" src="../images/map/denver.png">
+            <img class="telluride destination" ng-click="showTelluride($event, 'Telluride')" src="../images/map/telluride.png">
+            <img class="vail destination" ng-click="showVail($event, 'Vail')" src="../images/map/vail.png">
+            <img class="cb destination" ng-click="showCb($event, 'Crested Butte')" src="../images/map/crested-butte.png">
+            <img class="aspen destination" ng-click="showAspen($event, 'Aspen')" src="../images/map/aspen.png">
+            <img class="steamboat destination" ng-click="showSteamboat($event, 'Steamboat Springs')" src="../images/map/steamboat.png">
             </md-card>
-                        <div flex class="margin-bottom margin-top" layout="row">
+            <div flex class="margin-bottom margin-top" layout="row">
                 <md-button ng-click="showTelluride($event, 'Telluride')" class="md-button md-raised margin-auto map-button">
-                    TELLURIDE
+                TELLURIDE
                 </md-button>
                 <md-button ng-click="showAspen($event, 'Aspen')" class="md-button md-raised margin-auto map-button">
-                    ASPEN
+                ASPEN
                 </md-button>
                 <md-button ng-click="showVail($event, 'Vail')" class="md-button md-raised margin-auto map-button">
-                    VAIL
+                VAIL
                 </md-button>
                 <md-button ng-click="showCb($event, 'Crested Butte')" class="md-button md-raised margin-auto map-button">
-                    CRESTED BUTTE
+                CRESTED BUTTE
                 </md-button>
                 <md-button ng-click="showSteamboat($event, 'Steamboat Springs')" class="md-button md-raised margin-auto map-button">
-                    STEAMBOAT SPRINGS
+                STEAMBOAT SPRINGS
                 </md-button>
             </div>
         </div>
     </div>
-    <!--  <md-button class="md-primary md-raised" ng-click="showAdvanced($event)" flex="100" flex-gt-md="auto">
-    Custom Dialog
-    </md-button> -->
 </div>
-<!--   <div ng-include src="'views/partials/footer.html'">
-</div> -->
