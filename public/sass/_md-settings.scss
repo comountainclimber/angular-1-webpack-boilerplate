@@ -103,7 +103,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   color: $white;
 }
 
-.md-button.md-freshair-theme.md-primary.btn1{
+.md-button.md-freshair-theme.md-primary.btn1 {
   @extend .button-stlye;
   color: $white;
   height: 60px;
@@ -113,7 +113,28 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   width:80%;
 }
 
-.md-button.md-freshair-theme.md-primary.btn2{
+
+.md-button.md-freshair-theme.md-raised.map-button {
+  background-color: white;
+  // min-width: 150px;
+  // max-width: 150px;
+  // margin: auto;
+}
+
+.md-button.md-freshair-theme.md-raised.map-button-mobile {
+  background-color: white;
+  // min-width: 130px;
+  flex: 1 0 130px;
+  // max-width: 150px;
+  // margin: auto;
+  // margin-top: 20px;
+  // padding-left: 5px;
+  // padding-right: 5px;
+  // margin: auto;
+  // margin: auto;
+}
+
+.md-button.md-freshair-theme.md-primary.btn2 {
   @extend .button-stlye;
   color: $white;
   height: 50px;
@@ -124,7 +145,7 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   margin-bottom: 20px;
 }
 
-.md-button.md-freshair-theme.md-primary.btn3{
+.md-button.md-freshair-theme.md-primary.btn3 {
   @extend .button-stlye;
   color: $white;
   -webkit-margin-before: 1em;

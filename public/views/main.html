@@ -1,4 +1,4 @@
-<div autoscroll="true" class="page-container padding-bottom-60">
+<div autoscroll="true" class="page-container padding-bottom-80">
   <div layout="row">
     <div class="jumbo">
       <div layout="column" class="text-center margin-auto content-column" layout-fill layout-align="center"  flex-gt-xs="80" flex-xs="95">
@@ -12,7 +12,11 @@
       </div>
     </div>
   </div>
-      <div ng-include class="margin-bottom" src="'views/map.html'">
+
+  <div hide-sm hide-xs ng-include class="margin-bottom" src="'views/map.html'">
+  </div>
+
+  <div hide-gt-sm ng-include src="'views/mobile-map.html'">
   </div>
 
   <a ng-controller="scrollCtrl "id="howitworks">
@@ -32,10 +36,6 @@
   </div>
   <div ng-include class="margin-bottom" src="'views/partials/member-benefits.html'">
   </div>
-
-
-
-
   <md-card flex-gt-sm="75" flex-sm="90" flex-xs="95" class="margin-auto margin-bottom">
   <div ng-include style="
     background-color: rgba(224,224,224,1);

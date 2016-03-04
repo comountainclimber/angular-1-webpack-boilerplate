@@ -109,12 +109,21 @@ strong {
 .padding-bottom-60 {
   padding-bottom: 60px;
 }
+
+.padding-bottom-80 {
+  padding-bottom: 80px;
+}
+
 .margin-top {
   margin-top: 20px;
 }
 
 .margin-bottom {
   margin-bottom: 20px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
 }
 
 .no-margin {
@@ -252,7 +261,7 @@ background: url("../images/map.png") no-repeat;
     height: 515px;
     border-radius: 10px;
 
-  img:hover {
+  img.destination:hover {
     cursor: pointer;
     opacity: .4;
   }
