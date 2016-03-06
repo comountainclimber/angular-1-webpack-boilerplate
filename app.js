@@ -4,7 +4,6 @@ var bodyParser = require('body-parser');
 var http = require('http');
 var querystring = require('querystring');
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-
 var sassMiddleware = require('node-sass-middleware');
 var fs = require('fs');
 var path = require('path');
@@ -207,6 +206,10 @@ app.post('/cbrequest', function(req, res, next){
 });
 request.write(postData);
 request.end();
+});
+
+app.get('*', function (req, res) {
+  res.redirect('/');
 });
 
 // Creating Server and Listening for Connections \\
