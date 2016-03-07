@@ -3,13 +3,13 @@
     <h1 class="text-center padding-top no-margin-top">
     MEMBERSHIP OPTIONS
     </h1>
-    <div layout="row" class="margin-auto" flex="100" >
-      <div layout="row" flex-gt-sm="80" layout-xs="column" layout-xs="column" layout-padding class="margin-auto">
-        <div flex class="text-center member-details">
+    <div layout="row" class="margin-auto" flex-wrap flex="100" >
+      <div layout="row" layout-xs="column" flex-wrap class="margin-auto">
+        <div flex-gt-xs="33" class="text-center member-details">
           <i class="material-icons">person_outline</i>
           <h2>Personal</h2>
           <h4>$1000 per month </h4>
-          <div flex-sm="95" class="margin-auto">
+          <div flex class="margin-auto">
             <p>
               Unlimited flights for one <br>
               Access to guest passes <br>
@@ -19,11 +19,11 @@
             </p>
           </div>
         </div>
-        <div flex class="text-center member-details simplified-travel-list">
+        <div flex-gt-xs="33" class="text-center member-details simplified-travel-list">
           <i class="material-icons">group</i>
           <h2>Family</h2>
           <h4>$3000 per month </h4>
-          <div flex-sm="95"  class="margin-auto">
+          <div class="margin-auto">
             <p>
               Unlimited flights for four <br>
               Access to guest passes <br>
@@ -33,11 +33,11 @@
             </p>
           </div>
         </div>
-        <div flex class="member-details text-center">
+        <div flex-gt-xs="33" class="member-details text-center">
           <i class="material-icons">business</i>
           <h2>Business</h2>
-          <h4> $3,500 per month </h4>
-          <div flex-sm="95" class="margin-auto">
+          <h4> $3500 per month </h4>
+          <div class="margin-auto">
             <p>
               Unlimited flights for four <br>
               Access to guest passes<br>
@@ -54,7 +54,7 @@
   Select a membership option to get started.
   </h2>
   <div flex class="padding-bottom" layout="row" ng-hide="hideMemberForm">
-    <form  ng-submit="membershipFormSubmission()" flex-sm="95" flex-xs="90" flex-gt-sm="90" name="userForm" class="padding-bottom margin-auto">
+    <form  ng-submit="membershipFormSubmission()" flex-sm="95" flex-xs="90" flex-sm="90" flex-md="80" flex-gt-md="60" name="userForm" class="padding-bottom margin-auto">
       <div>
         <div layout="row" layout-xs="column" flex="100" layout-padding class="padding-top">
           <md-input-container class="membership-form" flex-gt-xs="20">
