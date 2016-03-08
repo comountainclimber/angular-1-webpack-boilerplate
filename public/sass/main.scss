@@ -30,7 +30,11 @@ body, html {
   font-family: $font-family-sans-serif;
 }
 
-h1, h2, h3 {
+h1 {
+  font-weight: 400
+}
+
+h2, h3 {
   font-weight: 300;
   line-height: 1.1;
 }
@@ -67,13 +71,18 @@ strong {
   }
 
   .content-column {
-    @media (min-width: 768px) {
-      padding-bottom: 250px;
-    }
+    // @media (min-width: 768px) {
+      padding-top: 12vh;
+    // }
   }
 
   h1 {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 60px;
+
+        @media (max-width: 960px) {
+      font-size: 55px;
+    }
   }
 }
 
