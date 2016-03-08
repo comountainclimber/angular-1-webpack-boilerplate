@@ -60,6 +60,7 @@ strong {
   overflow: hidden;
   width: 100vw;
   min-height: 500px;
+  max-height: 900px;
 
 
   @media (max-width: 768px) {
@@ -79,7 +80,7 @@ strong {
 
   h1 {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 55px;
 
         @media (max-width: 960px) {
       font-size: 45px;
