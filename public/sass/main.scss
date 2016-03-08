@@ -59,6 +59,7 @@ strong {
   height: 90vh;
   overflow: hidden;
   width: 100vw;
+  min-height: 500px;
 
 
   @media (max-width: 768px) {
@@ -81,7 +82,7 @@ strong {
     font-size: 60px;
 
         @media (max-width: 960px) {
-      font-size: 55px;
+      font-size: 45px;
     }
   }
 }
