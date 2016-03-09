@@ -1,0 +1,27 @@
+.footer {
+    background-color: $darkgrey;
+    color: $white;
+    padding-top: 6%;
+    padding-bottom: 12%;
+
+  h4 {
+    font-weight: 300;
+  }
+
+  a:hover {
+    font-weight: 600;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  img {
+    width:25px;
+  }
+
+  img:hover {
+    opacity: .5;
+  }
+}

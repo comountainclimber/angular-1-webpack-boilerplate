@@ -11,7 +11,6 @@ var path = require('path');
 // Create Express App Object \\
 var app = module.exports = express();
 
-
 app.use(
   sassMiddleware({
     src: __dirname + '/public/sass',
@@ -24,6 +23,7 @@ app.use(
 
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.use(require('prerender-node').set('prerenderToken', 'MOZX1whsk4QQuUB6G7Ki')); 
 
 // Application Configuration \\
 app.use(bodyParser.json());

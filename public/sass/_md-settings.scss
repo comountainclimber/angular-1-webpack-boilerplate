@@ -121,27 +121,12 @@ md-backdrop.md-sidenav-backdrop.md-opaque.ng-scope.md-freshair-theme {
   // margin: auto;
 }
 
-.word-wrap {
-      display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
-    display: flex;   
-    flex-wrap: wrap;
-}
-
 .md-button.md-freshair-theme.md-raised.map-button-mobile {
   background-color: white;
-      margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
   min-width: 135px;
-  // flex: 1 0 130px;
-  // max-width: 150px;
-  // margin: auto;
-  // margin-top: 20px;
-  // padding-left: 5px;
-  // padding-right: 5px;
-  // margin: auto;
-  // margin: auto;
 }
 
 .md-button.md-freshair-theme.md-primary.btn2 {
