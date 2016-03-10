@@ -87,7 +87,6 @@ $darkgrey: #454545;
 }
 
 .white-nav {
-  // font-size: 12px;
   display: inline-block;
   color: $white;
   letter-spacing: .03rem;
@@ -101,8 +100,4 @@ $darkgrey: #454545;
   @media (min-width: 901px) {
     display: none;
   }
-}
-
-.desktop-nav-link {
-  // letter-spacing: .03rem;
 }

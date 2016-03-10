@@ -5,9 +5,9 @@ angular.module('freshAir')
 
       $scope.close = function () {
       $mdSidenav('left').close()
-        .then(function () {
-          $log.debug("close RIGHT is done");
-        });
+        // .then(function () {
+        //   $log.debug("close RIGHT is done");
+        // });
       };
 
      // * Supplies a function that will continue to operate until the
@@ -33,18 +33,18 @@ angular.module('freshAir')
       return debounce(function() {
         $mdSidenav(navID)
           .toggle()
-          .then(function () {
-            $log.debug("toggle " + navID + " is done");
-          });
+          // .then(function () {
+          //   $log.debug("toggle " + navID + " is done");
+          // });
       }, 100);
     }
     function buildToggler(navID) {
       return function() {
         $mdSidenav(navID)
           .toggle()
-          .then(function () {
-            $log.debug("toggle " + navID + " is done");
-          });
+          // .then(function () {
+          //   $log.debug("toggle " + navID + " is done");
+          // });
       };
     }
   }])
@@ -52,8 +52,8 @@ angular.module('freshAir')
   .controller('LeftCtrl', ['$scope', '$timeout', '$mdSidenav', '$log', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.close = function () {
       $mdSidenav('left').close()
-        .then(function () {
-          $log.debug("close LEFT is done");
-        });
+        // .then(function () {
+        //   $log.debug("close LEFT is done");
+        // });
     };
   }]);

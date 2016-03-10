@@ -4,15 +4,17 @@
 @import 'animation';
 @import 'typography';
 @import 'map-feature';
+@import 'formatting';
+@import 'footer';
 
 $darkblue: #263248;
 $primary: #24aae1;
 $greyblue: #7e8aa2;
-// $gold: #ff9800;
 $black: #000;
 $grey: #9b9b9b;
 $darkgrey: #454545;
 $lightgrey: #b4b4b4;
+$materialgrey: #DBDBDB;
 $white: #fff;
 $primary-button-on-hover: #198ab9;
 $anchor-color: #6ec4e9;
@@ -31,10 +33,15 @@ body, html {
 }
 
 h1 {
-  font-weight: 400
+  font-weight: 300
 }
 
-h2, h3 {
+h2 {
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+h3 {
   font-weight: 300;
   line-height: 1.1;
 }
@@ -73,96 +80,28 @@ strong {
   }
 
   .content-column {
-    // @media (min-width: 768px) {
-      padding-top: 12vh;
-    // }
+    padding-top: 12vh;
+
+    @media (max-width: 400px) {
+      padding-top: 20px;
+    }
   }
 
   h1 {
     font-weight: 600;
     font-size: 55px;
+    color:$white;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
 
-        @media (max-width: 960px) {
+    @media (max-width: 960px) {
       font-size: 45px;
     }
   }
-}
 
-.page-container {
-  background-color: $white;
-}
-
-.page-container-padding-bottom {
-  background-color: $white;
-  padding-bottom: 6%;
-}
-
-.padding-top {
-  padding-top: 20px;
-}
-
-.padding-top-40 {
-  padding-top: 40px;
-}
-
-.padding-bottom-40 {
-  padding-bottom: 40px;
-}
-
-.margin-bottom-40 {
-  margin-bottom: 40px;
-}
-
-.padding-bottom {
-  padding-bottom: 20px;
-}
-
-.padding-bottom-60 {
-  padding-bottom: 60px;
-}
-
-.padding-bottom-80 {
-  padding-bottom: 80px;
-}
-
-.margin-top {
-  margin-top: 20px;
-}
-
-.margin-bottom {
-  margin-bottom: 20px;
-}
-
-.margin-bottom-40 {
-  margin-bottom: 40px;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.no-margin-bottom {
-  margin-bottom: 0;
-}
-
-.no-margin-top {
-  margin-top: 0;
-}
-
-.white {
-  color: $white;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.margin-auto {
-  margin: auto;
+  h4 {
+    font-weight: 300; 
+    padding-bottom:10px;
+  }
 }
 
 .headline {
@@ -172,10 +111,6 @@ strong {
   font-weight: 100;
   letter-spacing: 1.69px;
   margin-top: 1em;
-}
-
-.darkblue-background {
-  background-color: $darkblue;
 }
 
 .form-image img {
@@ -206,53 +141,10 @@ img.md-card-image.jumbotron-image {
   width: 95px;
 }
 
-.benefits {
-  background-color: $greyblue;
-  border-radius: 70px;
-  color: $white;
-  height: 50px;
-  margin-bottom: -20px;
-  padding: 20px;
-  width: 50px;
-}
-
-.section-divider {
-  background-color: $darkblue;
-  height: 150px;
-}
-
 .get-there-faster img {
   margin-left: 5px;
   margin-right: 2px;
   width: 210px;
-}
-
-.footer {
-    background-color: $darkgrey;
-    color: $white;
-    padding-top: 6%;
-    padding-bottom: 12%;
-
-  h4 {
-    font-weight: 300;
-  }
-
-  a:hover {
-    font-weight: 600;
-  }
-
-  a {
-    color: $white;
-    text-decoration: none;
-  }
-
-  img {
-    width:25px;
-  }
-
-  img:hover {
-    opacity: .5;
-  }
 }
 
 .faq-page h1 {
@@ -280,7 +172,6 @@ img.md-card-image.jumbotron-image {
 .headline-selected:hover {
   font-weight: bold;
 }
-
 
 .question p {
   font-weight: bold;
@@ -320,5 +211,19 @@ img.md-card-image.jumbotron-image {
 
   p {
     font-size: 14px; 
+  }
+}
+
+.main-page-membership {
+  background-color: $materialgrey;
+  padding-bottom: 40px;
+}
+
+.conversation {
+
+  h1 {
+    @media (max-width: 715px) {
+      font-size: 30px;
+    }
   }
 }
