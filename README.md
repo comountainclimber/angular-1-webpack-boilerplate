@@ -1,7 +1,7 @@
 # angular-1-webpack-boilerplate
 Documentation on how exactly to incorporate <a href="https://webpack.github.io/">Webpack</a> into your project can be pretty confusing for a jr. developer (such as myself) so i decided to publish a repo with the config I created for a recent project.
 
-*This configuration also utilizes <a href="https://github.com/sass/node-sass-middleware"> node-sass-middleware </a> in order to preprocess .SCSS (SASS) files on page refresh!
+*This configuration also utilizes <a href="https://github.com/sass/node-sass-middleware"> node-sass-middleware </a> in order to preprocesss all .SCSS (SASS) files -> minified main.css on page refresh!
 
 <ol>
   <li>
