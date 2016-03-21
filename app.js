@@ -28,7 +28,6 @@ app.use(require('prerender-node').set('prerenderToken', 'MOZX1whsk4QQuUB6G7Ki'))
 // Application Configuration \\
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.static(__dirname + '/public'));
 
 // Routes \\
 app.get('/', function(req, res, next){
