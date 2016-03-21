@@ -1,7 +1,7 @@
 {
-  "name": "FreshAir",
+  "name": "angular-1-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "FreshAir is private jet subscription service for unlimited flights to the mountains of Colorado.",
+  "description": "A webpack boilerplate scaffold for angular 1.x projects with built in live-reload and module bundling.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,13 +12,14 @@
   "author": "Maxwell Lasky",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.2",
+    "angular-route": "^1.5.2",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "fs": "0.0.2",
     "node-sass-middleware": "^0.9.7",
     "webpack": "^1.12.14",
-    "xmlhttprequest": "^1.8.0",
-    "prerender-node": "latest"
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",

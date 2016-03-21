@@ -1,60 +1,9 @@
-<div autoscroll class="page-container padding-bottom-80">
-
-  <div layout="row">
-    <div class="jumbo">
-      <div layout="column" flex="100" class="text-center margin-auto content-column">
-        <div layout>
-          <h1 class="margin-auto padding-bottom"> WHY SIT IN TRAFFIC?</h1>
-        </div>
-        <div layout>
-          <h2 flex-xs="75" flex-sm="55" class="margin-auto padding-bottom"><strong>  When you can fly to the mountains in 40 minutes. </strong> </h2>
-        </div>
-        <div layout>
-          <h4 flex-xs="80" flex-sm="60" flex-md="85" flex-gt-md="75" class="margin-auto text-center"> All-you-can-fly membership to Telluride, Aspen and Eagle-Vail for one low monthly fee. </h4>
-        </div>
-        <div layout>
-          <div flex-gt-xs="50" flex-xs="75" class="margin-auto text-center">
-            <a ng-controller="scrollCtrl" du-smooth-scroll du-scrollspy href="#howitworks">
-              <md-button class="md-raised md-primary btn-100">HOW IT WORKS</md-button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div hide-sm hide-xs ng-include class="margin-bottom" src="'views/map.html'">
-  </div>
-  <div hide-gt-sm ng-include src="'views/mobile-map.html'">
-  </div>
-
-  <div flex="100" class="text-center padding-top">
-    <a ng-controller="scrollCtrl "id="howitworks">
-    </a>
-    <h1 class="margin-bottom-10"> HOW IT WORKS </h1>
-    <h3 class="no-margin-top"> Save time with the best travel solution to the mountains.</h3>
-  </div>
-
-  <div layout="row" class="news-video">
-    <video width="75%" height="50%" class="margin-auto" controls poster="../images/video-still.jpg">
-      <source src="../images/skip-the-traffic.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div flex="95" class="text-center margin-auto get-there-faster padding-top-40">
-    <h1 class="no-margin-top"> Get there faster with <img src="images/freshair-logo-text.png"></h1>
-  </div>
-
-  <div ng-include class="margin-bottom" src="'views/partials/member-benefits.html'">
-  </div>
-
-  <md-card flex-gt-sm="80" flex-sm="95" flex-xs="95" class="margin-auto margin-bottom">
-    <div ng-include class="main-page-membership" src="'views/partials/conversation.html'">
-    </div>
-  </md-card>
-
-</div>
-
-<div ng-include src="'views/partials/footer.html'">
+<div class="text-center">
+  <h1>
+    {{greeting}}
+  </h1>
+  <h3>
+    You have successfully run <a href="https://github.com/users/comountainclimber" targer="blank"> comountainclimber's </a> Angular 1.x live reload boilerplate!
+  </h3>
+  <h5> edit any JS file to see the live reload in action and have fun developing. </h5>
 </div>
